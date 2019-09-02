@@ -1,0 +1,522 @@
+﻿<UserControl x:Class="Pospedia.CalculatorControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pospedia"
+             xmlns:core="clr-namespace:Pospedia.Core;assembly=Pospedia.Core"
+             mc:Ignorable="d" 
+             d:DataContext="{x:Static core:CalculatorDesignModel.Instance}"
+            
+             >
+    
+    <Border Background="{StaticResource GrayNexusBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid Background="{StaticResource DarkPurpleNexusBrush}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="1" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock Text="{StaticResource CalculatorsIcon}"
+                                       FontFamily="{StaticResource FontAwesome}"
+                                       FontSize="{StaticResource FontSizeLarge}"
+                                       Foreground="{StaticResource MilkBrush}"
+                                       VerticalAlignment="Center"
+                            />
+                    <TextBlock Text="Calculators Profesional"
+                                       Margin="15 0 0 0"
+                                       FontFamily="{StaticResource Roboto}"
+                                       FontSize="{StaticResource FontSizeRegular}"
+                                       Foreground="{StaticResource MilkBrush}" 
+                                       VerticalAlignment="Center"
+                             />
+                </StackPanel>
+
+                <Button Grid.Column="2"
+                        Style="{StaticResource ButtonGrowIcon}"
+                        Width="50"
+                        Command="{Binding CloseCommand}"
+                        FontFamily="{StaticResource FontAwesome}"
+                        Content="{StaticResource PowerOffIcon}"
+                        Foreground="{StaticResource MilkBrush}"
+                        FontSize="{StaticResource FontSizeLarge}" 
+                        
+                 />
+
+            </Grid>
+
+            <Border Grid.Row="1" VerticalAlignment="Top"  Height="700" Background="{StaticResource PurpleNexusBrush}">
+                <TabControl BorderThickness="0"
+                            FontFamily="{StaticResource Roboto}"
+                            Foreground="{StaticResource MilkBrush}"
+                            Background="{StaticResource GrayNexusBrush}"
+                           
+                            >
+                    <TabItem Header="Regular Calculators"
+                             Background="{StaticResource PurpleNexusBrush}"
+                             Foreground="{StaticResource MilkBrush}"
+                             Padding="10 20 10 15">
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Border Height="100" Width="Auto">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                  
+                                        <TextBox Tag="0"
+                                                 Foreground="{StaticResource MilkBrush}"
+                                                 FontFamily="{StaticResource Expressway}"
+                                                 Width="711"
+                                                 Height="80"
+                                                 Text="{Binding Display, StringFormat=F2}"
+                                                 BorderThickness="0"
+                                                 Background="{StaticResource PurpleNexusBrush}"
+                                                 Style="{StaticResource CalculateTextBox}"
+                                                 Margin="18 0 10 0"
+                                                 FontSize="{StaticResource FontSizeXLarge}"
+                                                 IsReadOnly="True"
+                                                 local:IsNotAllowedCharacters.Value="{Binding OnlyNumbers}"
+                                             
+                                           />    
+                                 
+                                    
+
+                                    <TextBox Grid.Column="1"
+                                             Foreground="{StaticResource MilkBrush}"
+                                             FontFamily="{StaticResource Expressway}"
+                                             Width="292"
+                                             Height="80"
+                                             Tag="..."
+                                             Text="{Binding FullExpression}"
+                                             VerticalContentAlignment="Center"
+                                             Background="{StaticResource PurpleNexusBrush}"
+                                             Style="{StaticResource CalculateTextBox}"
+                                             TextAlignment="Center"
+                                             HorizontalContentAlignment="Center"
+                                             HorizontalAlignment="Center"
+                                             Margin="0 0 18 0"
+                                             FontSize="{StaticResource FontSizeXLarge}"
+                                             IsReadOnly="True"
+                                             />
+                                </Grid>
+                            </Border>
+
+                            <Border Grid.Row="1" Background="{StaticResource PurpleNexusBrush}" Height="Auto" Margin="18 0 18 0">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="70"
+                                                    Height="50"
+                                                    Content="7"
+                                                    BorderThickness="1"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="7"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="8"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="8"
+                                                    BorderThickness="0 1 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="9"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="9"
+                                                    BorderThickness="0 1 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Margin="50 0 0 0"
+                                                    Width="160"
+                                                    BorderThickness="1 1 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Height="50"
+                                                    Content="CE"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="CE"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="180"
+                                                    Height="50"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="C"
+                                                    Content="C"
+                                                    BorderThickness="0 1 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content=""
+                                                    BorderThickness="0 1 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+
+
+
+
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="70"
+                                                    Height="50"
+                                                    Content="4"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="4"
+                                                    BorderThickness="1 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="5"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="5"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="6"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="6"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Margin="50 0 0 0"
+                                                    Width="80"
+                                                    Height="50"
+                                                    Command="{Binding OperationCommand}"
+                                                    CommandParameter="+"
+                                                    BorderThickness="1 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="+"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Command="{Binding OperationCommand}"
+                                                    CommandParameter="-"
+                                                    Content="-"
+                                                     BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    BorderThickness="0 0 1 1"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="%"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="%"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="!x"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="!x"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="cos"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="cos"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+
+
+
+
+
+
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="70"
+                                                    Height="50"
+                                                    BorderThickness="1 0 1 1"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="1"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="2"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="2"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="3"
+                                                    BorderThickness="0 0 1 1"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="3"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Margin="50 0 0 0"
+                                                    Width="80"
+                                                    Height="50"
+                                                    Command="{Binding OperationCommand}"
+                                                    CommandParameter="*"
+                                                    BorderThickness="1 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="*"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="&#x00F7;"
+                                                    Command="{Binding OperationCommand}"
+                                                    CommandParameter="/"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="pow"
+                                                    BorderThickness="0 0 1 1"
+                                                    Command="{Binding OperationCommand}"
+                                                    CommandParameter="pow"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="&#x03C0;"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="PI"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="tan"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="tan"
+                                                     BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+
+
+
+
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Row="3" Orientation="Horizontal">
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="70"
+                                                    Height="50"
+                                                    BorderThickness="1 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    Content="+/-"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="+/-"
+                                                    FontSize="{StaticResource FontSizeRegular}"
+                                                    FontFamily="{StaticResource Expressway}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="0"
+                                                     BorderThickness="0 0 1 1"
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="0"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="80"
+                                                    Height="50"
+                                                    Content="."
+                                                    Command="{Binding NumbersCommand}"
+                                                    CommandParameter="."
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Margin="50 0 0 0"
+                                                    Width="160"
+                                                    Height="50"
+                                                    BorderThickness="1 0 1 1"
+                                                    Command="{Binding OperationCommand}"
+                                                    CommandParameter="="
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontSize="{StaticResource FontSizeLarge}"
+                                                    Content="="
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="sqrt"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="sqrt"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="sin"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="sin" 
+                                                     BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+                                            <Button Style="{StaticResource BaseButton}" 
+                                                    Width="90"
+                                                    Height="50"
+                                                    Content="log"
+                                                    Command="{Binding SingularOperationCommand}"
+                                                    CommandParameter="log"
+                                                    BorderThickness="0 0 1 1"
+                                                    BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                    FontFamily="{StaticResource Roboto}"
+                                                />
+
+
+
+
+
+
+                                        </StackPanel>
+
+                                        
+                                    </Grid>
+                                    
+                                </Grid> 
+                            </Border>
+
+                            <Border Grid.Row="2" Background="{StaticResource PurpleNexusBrush}" Height="Auto" Margin="18 20 18 0">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Height="250" >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            
+                                        </Grid.RowDefinitions>
+
+                                        <Border Background="{StaticResource DarkPurpleNexusBrush}" Width="1013" Height="50" >
+                                            <TextBlock Text="GSN Currency Converter"
+                                                       Foreground="{StaticResource MilkBrush}"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                        </Border>
+
+
+                                    </Grid>
+
+                                </Grid>
+                            </Border>
+
+                        </Grid>
+                        
+                    </TabItem>
+                    
+                    <TabItem Header="Finance Calculator"
+                             Background="{StaticResource PurpleNexusBrush}"
+                             Foreground="{StaticResource MilkBrush}"
+                             Padding="10 15 10 15"/>
+                </TabControl>
+            </Border>
+
+
+
+        </Grid>    
+    </Border>
+    
+</UserControl>

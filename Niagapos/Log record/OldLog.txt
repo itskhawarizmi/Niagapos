@@ -1,0 +1,1258 @@
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+No connection string named 'NiagaposEntities' could be found in the application config file. [LoginViewModel.cs > LoginAsync() > Line 127
+No connection string named 'NiagaposEntities' could be found in the application config file. [LoginViewModel.cs > LoginAsync() > Line 127
+No connection string named 'NiagaposEntities' could be found in the application config file. [LoginViewModel.cs > LoginAsync() > Line 127
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Schema specified is not valid. Errors: 
+The relationship 'NiagaposModel.FK_Customer_Product' was not loaded because the type 'NiagaposModel.Sale' is not available.
+
+The relationship 'NiagaposModel.FK_Product_SalesDetail' was not loaded because the type 'NiagaposModel.SalesDetail' is not available.
+The following information may be useful in resolving the previous error:
+The required property 'Sale' does not exist on the type 'Niagapos.Core.SalesDetail'.
+
+
+The relationship 'NiagaposModel.FK_Users_Product' was not loaded because the type 'NiagaposModel.Sale' is not available.
+ [LoginViewModel.cs > LoginAsync() > Line 127
+Schema specified is not valid. Errors: 
+The relationship 'NiagaposModel.FK_Customer_Product' was not loaded because the type 'NiagaposModel.Sale' is not available.
+
+The relationship 'NiagaposModel.FK_Product_SalesDetail' was not loaded because the type 'NiagaposModel.SalesDetail' is not available.
+The following information may be useful in resolving the previous error:
+The required property 'Sale' does not exist on the type 'Niagapos.Core.SalesDetail'.
+
+
+The relationship 'NiagaposModel.FK_Users_Product' was not loaded because the type 'NiagaposModel.Sale' is not available.
+ [LoginViewModel.cs > LoginAsync() > Line 127
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > AddProductToConfrimOrderListItem() > Line 196
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > AddProductToConfrimOrderListItem() > Line 196
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > AddProductToConfrimOrderListItem() > Line 198
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > AddProductToConfrimOrderListItem() > Line 200
+Object reference not set to an instance of an object. [TransactionViewModel.cs > AddProductToConfrimOrderListItem() > Line 200
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > AddProductToConfrimOrderListItem() > Line 200
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 266
+Object reference not set to an instance of an object. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 266
+Object reference not set to an instance of an object. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 266
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 298
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 298
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 298
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 315
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 315
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 315
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 315
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchProduct() > Line 227
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchProduct() > Line 237
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 325
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 349
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchProduct() > Line 354
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+The property 'CustomerId' is part of the object's key information and cannot be modified.  [CustomerViewModel.cs > AddData() > Line 162
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 684
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 683
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 683
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 682
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 682
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 682
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 682
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The table width must be greater than zero. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 683
+The table width must be greater than zero. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 683
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 684
+Wrong number of columns. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 684
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Index and length must refer to a location within the string.
+Parameter name: length [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 680
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Index and length must refer to a location within the string.
+Parameter name: length [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 680
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 686
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 686
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 484
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 689
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Object reference not set to an instance of an object. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 689
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Index and length must refer to a location within the string.
+Parameter name: length [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 689
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 748
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 749
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 753
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Index and length must refer to a location within the string.
+Parameter name: length [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 762
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 764
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 764
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 765
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+An error occurred while updating the entries. See the inner exception for details. [TransactionViewModel.cs > ProcessAndPrintTransactionOrder() > Line 765
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [ProductViewModel.cs > AddProductCategory() > Line 603
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The property 'ProductCategoryId' is part of the object's key information and cannot be modified.  [ProductViewModel.cs > AddProductCategory() > Line 607
+The property 'ProductCategoryId' is part of the object's key information and cannot be modified.  [ProductViewModel.cs > AddProductCategory() > Line 607
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The property 'ProductCategoryId' is part of the object's key information and cannot be modified.  [ProductViewModel.cs > AddProductCategory() > Line 613
+Object reference not set to an instance of an object. [ProductViewModel.cs > DeleteProductCategory() > Line 672
+The property 'ProductCategoryId' is part of the object's key information and cannot be modified.  [ProductViewModel.cs > AddProductCategory() > Line 613
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [ProductViewModel.cs > AddProductCategory() > Line 619
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [ProductViewModel.cs > AddProductCategory() > Line 619
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [ProductViewModel.cs > AddProductCategory() > Line 619
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [CustomerViewModel.cs > AddData() > Line 162
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [CustomerViewModel.cs > AddData() > Line 162
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [CustomerViewModel.cs > AddData() > Line 173
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [CustomerViewModel.cs > AddData() > Line 173
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [CustomerViewModel.cs > AddData() > Line 173
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details. [CustomerViewModel.cs > AddData() > Line 173
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated. [UserViewModel.cs > UpdateData() > Line 534
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated. [UserViewModel.cs > UpdateData() > Line 532
+The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated. [UserViewModel.cs > UpdateData() > Line 532
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated. [UserViewModel.cs > UpdateData() > Line 532
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 495
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Exception of type 'System.Exception' was thrown. [TransactionViewModel.cs > SearchDirectProductAddToConfirmOrder() > Line 495
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1332
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1332
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1334
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1334
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1338
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1339
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1338
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1346
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1346
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+The process cannot access the file 'C:\Users\Alpha\Desktop\Laporan Stok.pdf' because it is being used by another process. [ProductViewModel.cs > ImportData() > Line 1346
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Could not find a part of the path 'D:\Attachments\ProductLaporan Stok.pdf'. [ProductViewModel.cs > ExportData() > Line 1399
+Could not find a part of the path 'D:\Attachments\ProductLaporan Stok.pdf'. [ProductViewModel.cs > ExportData() > Line 1399
+Could not find a part of the path 'D:\Attachments\ProductLaporan Stok.pdf'. [ProductViewModel.cs > ExportData() > Line 1399
+Could not find a part of the path 'D:\Attachments\ProductLaporan Stok.pdf'. [ProductViewModel.cs > ExportData() > Line 1399
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Could not find a part of the path 'D:\Attachments\ProductLaporan Stok.pdf'. [ProductViewModel.cs > ExportData() > Line 1399
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Could not find a part of the path 'D:\Attachments\Product\Laporan Stok.pdf'. [ProductViewModel.cs > ExportData() > Line 1399
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Sequence contains more than one element [LoginViewModel.cs > LoginAsync() > Line 182
+Sequence contains more than one element [LoginViewModel.cs > LoginAsync() > Line 182
+Sequence contains more than one element [LoginViewModel.cs > LoginAsync() > Line 182
+Sequence contains more than one element [LoginViewModel.cs > LoginAsync() > Line 182
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30
+Application starting.... [App.xaml.cs > OnStartup() > Line 30

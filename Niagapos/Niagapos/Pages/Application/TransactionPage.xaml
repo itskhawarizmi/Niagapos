@@ -1,0 +1,1643 @@
+﻿<local:BasePage x:TypeArguments="local:TransactionViewModel"  x:Class="Niagapos.TransactionPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Niagapos"
+             mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Style TargetType="local:TransactionPage">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="UserControl">
+                    <Border Background="{StaticResource GrayNexusBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!--  Main content-->
+            <Border Grid.Row="1" Background="{StaticResource WhiteContainerBrush}" Margin="10 0 10 0" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Border ClipToBounds="True" Panel.ZIndex="10" Height="700" Width="Auto" Margin="10,0,-10,0" >
+                        <ContentPresenter Content="{TemplateBinding Content}" />
+                    </Border>
+
+                    <!-- Side Menu [Left] -->
+                    <Grid Grid.Column="1" Background="{StaticResource LightDustBrush}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Border Background="{StaticResource GrayNexusBrush}"
+                                                    Width="300"
+                                                    Height="Auto">
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Border Height="Auto"
+                                            Background="{StaticResource LightDustBrush}"
+                                            Margin="0 0 0 10"
+                                            Width="35">
+
+                                        <StackPanel Background="Transparent">
+
+                                            <Button Style="{StaticResource ButtonBarRight}"
+                                                    Content="DAFTAR MENU PRODUK" 
+                                                    FontFamily="{StaticResource Roboto}"
+                                                    CommandParameter="Open"
+                                                    FontSize="{StaticResource FontSizeSmallest}"
+                                                    Margin="0 5"
+                                                    Command="{Binding ListProductsControlMenuCommand}"
+                                                    />
+
+                                            <Button Style="{StaticResource ButtonBarRight}"
+                                                    Content="A" 
+                                                    FontFamily="{StaticResource Roboto}"
+                                                                    
+                                                    FontSize="{StaticResource FontSizeSmallest}"
+                                                    Margin="0 5"
+                                                    Command="{Binding ListMenuItemsControlCommand}"
+                                                    CommandParameter="Open"
+                                                    />
+
+                                               <Button Style="{StaticResource ButtonBarRight}"
+                                                    Content="B" 
+                                                    FontFamily="{StaticResource Roboto}"
+                                                                    
+                                                    FontSize="{StaticResource FontSizeSmallest}"
+                                                    Margin="0 5"
+                                                    Command="{Binding ListMenuItemsControlCommand}"
+                                                    CommandParameter="Open"
+                                                    />
+
+
+
+
+                                                            </StackPanel>
+
+                                    </Border>
+
+                                    <!-- Addition Information -->
+                                    <Border Grid.Column="1" 
+                                            Width="259" 
+                                            Height="Auto" 
+                                            BorderThickness="0.5 0 0 0"
+                                            Margin="-13 0 0 10"
+                                            BorderBrush="{StaticResource EnableNexusBrush}">
+
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+
+                                            <!-- Memo Info -->
+                                            <Grid Margin="0 2 0 5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+
+                                                <!-- Title bar -->
+                                                <Border Background="{StaticResource PurpleNexusBrush}" 
+                                                                        Width="255" 
+                                                                        Height="30">
+
+                                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                                                        <TextBlock HorizontalAlignment="Left"
+                                                                VerticalAlignment="Center"
+                                                                Margin="10 0 0 0"
+                                                                Text="{StaticResource PaperIcon}" 
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                FontSize="{StaticResource FontSizeRegular}"
+                                                                Foreground="{StaticResource MilkBrush}">
+                                                                                
+                                                        <Run Text=" Informasi Nota"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                Foreground="{StaticResource MilkBrush}" />
+
+                                                        </TextBlock>
+
+
+                                                    </StackPanel>
+
+                                                </Border>
+
+                                                <!-- Main content -->
+                                                <Border Width="255"
+                                                    Height="180"
+                                                    Grid.Row="1"
+                                                    Background="{StaticResource GrayNexusBrush}"
+                                                    BorderBrush="{StaticResource EnableNexusBrush}"
+                                                    BorderThickness="0.5"
+                                                    >
+
+
+                                                    <Grid Margin="5">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                        </Grid.RowDefinitions>
+
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="No:" 
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                Foreground="{StaticResource PurpleNexusBrush}"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5"/>
+
+                                                            <TextBox Grid.Column="1"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                Style="{StaticResource TextBoxStyle}"
+                                                                IsEnabled="False"
+                                                                BorderThickness="1"
+                                                                Margin="72 5 5 5"
+                                                                Width="139"
+                                                                Text="{Binding Bill, UpdateSourceTrigger=PropertyChanged}"
+                                                                Tag="Ex: 10115EA" />
+
+
+                                                        </Grid>
+
+                                                        <Grid Grid.Row="1">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="95" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="Tanggal:" 
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                Foreground="{StaticResource PurpleNexusBrush}"
+                                                                VerticalAlignment="Center"
+                                                                Margin="5"/>
+
+                                                            <TextBox Grid.Column="1"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                Style="{StaticResource TextBoxStyle}"
+                                                                BorderThickness="1"
+                                                                Margin="5"
+                                                                IsEnabled="False"
+                                                                Text="{Binding DateAndTime, UpdateSourceTrigger=PropertyChanged}"
+                                                                Width="139" />
+
+
+                                                        </Grid>
+
+                                                        <Grid Grid.Row="2">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="95" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="Petugas:" 
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5"/>
+
+                                                            <TextBox Grid.Column="1"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    Style="{StaticResource TextBoxStyle}"
+                                                                    Text="{Binding TransactionViewModel.User, UpdateSourceTrigger=PropertyChanged, Source={x:Static local:ViewModelLocator.Instance}}"
+                                                                    IsEnabled="False"
+                                                                    BorderThickness="1"
+                                                                    Margin="5"
+                                                                    Width="139"
+                                                                    Tag="Name.." />
+
+
+                                                        </Grid>
+
+                                                    </Grid>
+
+                                                </Border>
+
+                                            </Grid>
+
+                                            <!-- Customer Info -->
+                                            <Grid Margin="0 5 0 5" Grid.Row="1">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+
+                                                <!-- Title bar -->
+                                                <Border Background="{StaticResource PurpleNexusBrush}" 
+                                                                        Width="255" 
+                                                                        Height="30">
+
+                                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                                                        <TextBlock HorizontalAlignment="Left"
+                                                                VerticalAlignment="Center"
+                                                                Margin="10 0 0 0"
+                                                                Text="{StaticResource UserIcon}" 
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                FontSize="{StaticResource FontSizeRegular}"
+                                                                Foreground="{StaticResource MilkBrush}">
+                                                                                
+                                                        <Run Text=" Informasi Customer"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                Foreground="{StaticResource MilkBrush}" />
+
+                                                        </TextBlock>
+
+
+                                                    </StackPanel>
+
+                                                </Border>
+
+                                                <!-- Main content -->
+                                                <Border Width="255"
+                                                                        Height="180"
+                                                                        Grid.Row="1"
+                                                                        Background="{StaticResource GrayNexusBrush}"
+                                                                        BorderBrush="{StaticResource EnableNexusBrush}"
+                                                                        BorderThickness="0.5 0.5 1 1"
+                                                                        >
+
+
+                                                    <Grid Margin="5">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                            <RowDefinition Height="Auto" />
+                                                        </Grid.RowDefinitions>
+
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="95" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="ID:" 
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5"/>
+
+                                                            <TextBox Grid.Column="1"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    Style="{StaticResource TextBoxStyle}"
+                                                                    BorderThickness="1" 
+                                                                    Margin="5"
+                                                                    Text="{Binding CustomerId, UpdateSourceTrigger=PropertyChanged}"
+                                                                    Width="139"
+                                                                    Tag="Customer ID..">
+                                                                    <TextBox.InputBindings>
+                                                                    <KeyBinding Command="{Binding LoadCustomerInfoCommand}" Key="Return" />
+                                                                    </TextBox.InputBindings>
+                                                                </TextBox>
+
+
+                                                        </Grid>
+
+                                                        <Grid Grid.Row="2">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="95" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="Nama:" 
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5"/>
+
+                                                            <TextBox Grid.Column="1"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    Style="{StaticResource TextBoxStyle}"
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    BorderThickness="1"
+                                                                    IsEnabled="False"
+                                                                    Margin="5"
+                                                                    IsReadOnly="True"                
+                                                                    Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                                                                    Width="139"
+                                                                    Tag="Cust Name.." />
+
+
+                                                        </Grid>
+
+                                                        <Grid Grid.Row="3">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="95" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="Telepon:" 
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5"/>
+
+                                                             <TextBox Grid.Column="1"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    Style="{StaticResource TextBoxStyle}"
+                                                                    BorderThickness="1"
+                                                                    Margin="5"
+                                                                    IsReadOnly="True"      
+                                                                    IsEnabled="False"
+                                                                    Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}"
+                                                                    Width="139"
+                                                                    Tag="Cust Name.." 
+                                                            />
+
+
+                                                          </Grid>
+
+                                                        <Grid Grid.Row="4">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="95" />
+                                                                <ColumnDefinition Width="*" />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="Alamat:" 
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    FontSize="{StaticResource FontSizeSmall}"
+                                                                    Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5"/>
+
+                                                            <TextBox Grid.Column="1"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                Style="{StaticResource TextBoxStyle}"
+                                                                BorderThickness="1"
+                                                                IsReadOnly="True"
+                                                                IsEnabled="False"
+                                                                Margin="5"
+                                                                Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}"
+                                                                Width="139"
+                                                                Tag="Cust Address.." />
+
+
+                                                        </Grid>
+
+
+
+                                                    </Grid>
+
+                                                </Border>
+                                            </Grid>
+
+                                            <!-- Notes -->
+                                            <Grid Margin="0 5 0 10" Grid.Row="2">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+
+                                                <!-- Title bar -->
+                                                <Border Background="{StaticResource PurpleNexusBrush}" 
+                                                                        Width="255" 
+                                                                        Height="30">
+
+                                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left">
+                                                        <TextBlock HorizontalAlignment="Left"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="10 0 0 0"
+                                                                    Text="{StaticResource ChatIcon}" 
+                                                                    FontFamily="{StaticResource FontAwesome}"
+                                                                    FontSize="{StaticResource FontSizeRegular}"
+                                                                    Foreground="{StaticResource MilkBrush}">
+                                                                                
+                                                                <Run Text=" Catatan"
+                                                                        FontFamily="{StaticResource Roboto}"
+                                                                        FontSize="{StaticResource FontSizeSmall}"
+                                                                        Foreground="{StaticResource MilkBrush}"
+                                                                        />
+
+                                                        </TextBlock>
+
+
+                                                    </StackPanel>
+
+                                                </Border>
+
+                                                <!-- Main content -->
+                                                <Border Width="255"
+                                                        Height="172"
+                                                        Grid.Row="1"
+                                                        Background="{StaticResource GrayNexusBrush}"
+                                                        BorderBrush="{StaticResource EnableNexusBrush}"
+                                                        BorderThickness="0.5 0.5 1 1"
+                                                        >
+
+                                                    <Grid Margin="0">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*" />
+                                                            <RowDefinition Height="Auto" />
+                                                        </Grid.RowDefinitions>
+
+                                                        <TextBox Tag="Type here.."
+                                                                Height="170"
+                                                                local:IsTextLengthHasChanged.Value="True"
+                                                                Padding="5"
+                                                                Width="253"
+                                                                BorderThickness="0"
+                                                                BorderBrush="Transparent"
+                                                                AcceptsReturn="True"
+                                                                TextWrapping="Wrap"
+                                                                Style="{StaticResource BaseTextBox}"
+                                                                Text="{Binding Notes, UpdateSourceTrigger=PropertyChanged}"
+                                                                FontSize="{StaticResource FontSizeSmall}"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                Background="{StaticResource MilkBrush}"
+                                                                Foreground="{StaticResource PurpleNexusBrush}"
+                                                                VerticalScrollBarVisibility="Auto"
+                                                                HorizontalScrollBarVisibility="Auto"/>
+
+                                    <TextBlock VerticalAlignment="Bottom"
+                                                        HorizontalAlignment="Right"
+                                                        Margin="0 0 5 0"
+                                                        Text="{Binding CharacterCounterNotes, UpdateSourceTrigger=PropertyChanged}"
+                                                        Foreground="{StaticResource DustBrush}"
+                                                        FontSize="{StaticResource FontSizeSmallest}"
+                                                        FontFamily="{StaticResource Roboto}"
+                                                        FontWeight="Bold"
+                                                                                       
+                                                        />
+
+                                                    </Grid>
+
+                                                </Border>
+                                            </Grid>
+
+                                        </Grid>
+
+                                    </Border>
+
+                                </Grid>
+
+
+                            </Border>
+
+                            <Grid Margin="0 -17 0 0" Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+
+                                <Border Background="{StaticResource HintNexusBrush}" 
+                                                        BorderBrush="{StaticResource EnableNexusBrush}" 
+                                                        BorderThickness="1" 
+                                                        Margin="0 17 0 5"
+                                                        Height="40">
+
+                                    <StackPanel Orientation="Horizontal" Margin="2" >
+
+                                        <Button Style="{StaticResource ButtonIcons}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Content="{StaticResource ShoopingCartIcon}"
+                                                                Margin="0 0 5 0"/>
+
+                                        <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    FontFamily="{StaticResource Expressway}"
+                                                                    FontSize="{StaticResource FontSizeLarge}"
+                                                                    FontWeight="Bold"
+                                                                    Text="{Binding TotalQuantity, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5 0 5 0"/>
+
+                                        <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                                                    FontFamily="{StaticResource Roboto}"
+                                                                    FontSize="{StaticResource FontSizeSmallest}"
+                                                                    Text="ITEM (QTY)"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="5 10 5 10"/>
+
+
+                                        <Button Style="{StaticResource ButtonIcons}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Content="{StaticResource BarcodeIcon}"
+                                                                Margin="50 0 0 0"/>
+
+                                        <TextBox Style="{StaticResource BaseTextBox}"
+                                                                    Width="300"
+                                                                    Padding="5 8 5 0"
+                                                                    Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                                                    Margin="0 0 0 0"
+                                                                    Height="34">
+
+                                            <TextBox.InputBindings>
+                                                                    <KeyBinding Key="Return" Command="{Binding SearchProductByDirectOrderCommand}" />
+
+                                                                </TextBox.InputBindings>
+
+
+                                        </TextBox>
+
+                                        <Button Style="{StaticResource ButtonIcons}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Content="{StaticResource SearchIcon}"
+                                                                Command="{Binding SearchProductByDirectOrderCommand}"
+                                                                Margin="0 0 0 0"/>
+
+                                        <Button Style="{StaticResource ButtonGrowIcon}"
+                                                                Height="50"
+                                                                Width="50"
+                                                                Foreground="{StaticResource PurpleNexusBrush}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Content="{StaticResource CartPlusIcon}"
+                                                                Margin="13 0 0 0"/>
+
+
+
+                                    </StackPanel>
+
+                                </Border>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Order List  -->
+                                    <DataGrid Panel.ZIndex="10"
+                                                                BorderBrush="{StaticResource DarkGrayBrush}" 
+                                                                BorderThickness="1" 
+                                                                Margin="0 0 0 55"
+                                                                Padding="2"
+                                                                Style="{StaticResource DataGridPrimary}"
+                                                                Height="495" 
+                                                                x:Name="Dg_OrderItems"
+                                                                AutoGenerateColumns="False"
+                                                                FontFamily="{StaticResource Roboto}"
+                                                                ItemsSource="{Binding OrderListItemsCollection, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                                                SelectedItem="{Binding GetOrderListItemModel, Mode=TwoWay}"
+                                                                VerticalScrollBarVisibility="Auto"
+                                                                HorizontalScrollBarVisibility="Auto"
+                                                                CanUserAddRows="False"
+                                                                CanUserSortColumns="True"
+                                                                CanUserReorderColumns="True"
+                                                                CanUserResizeRows="False"
+                                                                CanUserResizeColumns="False">
+
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Header="ID" Width="70" Binding="{Binding ProductId, Mode=TwoWay}"/>
+                                            <DataGridTextColumn Header="NAMA" Width="150" Binding="{Binding ProductName, Mode=TwoWay}" />
+                                            <DataGridTextColumn Header="KATEGORI" Width="Auto" Binding="{Binding ProductCategory, Mode=TwoWay}" />
+                                            <DataGridTextColumn Header="MEREK" Binding="{Binding Brand, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Width="Auto" IsReadOnly="False"/>
+                                            <DataGridTextColumn Header="HARGA" Width="Auto" Binding="{Binding Price, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" />
+                                            <DataGridTextColumn Header="JUMLAH" Width="Auto" Binding="{Binding Quantity, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            <DataGridTextColumn Header="TOTAL" Width="Auto" Binding="{Binding Total, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" />
+                                            <DataGridTextColumn Header="DISKON" Width="Auto" Binding="{Binding Discount, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" />
+                                            <DataGridTextColumn Header="SUBTOTAL" Width="Auto" Binding="{Binding Subtotal, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" />
+                                             </DataGrid.Columns>
+
+                                
+
+                                    </DataGrid>
+
+
+
+                                </Grid>
+
+
+                                <!-- Line of total -->
+                                <Border Grid.Row="2" 
+                                                        Background="Transparent" 
+                                                        BorderBrush="{StaticResource EnableNexusBrush}" 
+                                                        BorderThickness="1 1 1 1"
+                                                        Height="45"
+                                                        VerticalAlignment="Center"
+                                                        Width="751"
+                                                        Margin="0 -55 0 0"
+                                                        Padding="5">
+
+
+                                    <StackPanel Orientation="Horizontal" Background="{StaticResource PurpleNexusBrush}" Width="Auto">
+                                        <Button Content="{StaticResource CartPlusIcon}"
+                                                                FontSize="{StaticResource FontSizeRegular}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Style="{StaticResource BaseButton}" 
+                                                                />
+
+                                        <Button Content="{StaticResource RemoveIcon}"   
+                                                                FontSize="{StaticResource FontSizeRegular}"
+                                                                Style="{StaticResource BaseButton}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Command="{Binding DeleteOrderItemCommand}"
+                                                                />
+
+                                        <Button Content="{StaticResource EditIcon}"
+                                                                FontSize="{StaticResource FontSizeRegular}"
+                                                                Style="{StaticResource BaseButton}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                />
+
+                                        <Button Content="{StaticResource TrashIcon}"
+                                                                FontSize="{StaticResource FontSizeRegular}"
+                                                                Style="{StaticResource BaseButton}"
+                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                Command="{Binding ClearAllOrderItemsCommand}"
+                                                                />
+
+                                    </StackPanel>
+
+
+                                </Border>
+
+                                <!-- Line of total -->
+                                <Border Grid.Row="3" 
+                                                        Panel.ZIndex="0"
+                                                        Background="{StaticResource HintNexusBrush}" 
+                                                        BorderBrush="{StaticResource EnableNexusBrush}" 
+                                                        BorderThickness="1 1 1 1"
+                                                        Height="50"
+                                                        VerticalAlignment="Center"
+                                                        Width="751"
+                                                        Margin="0 0 0 10"
+                                                        Padding="5">
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Style="{StaticResource ButtonGrowIcon}"
+                                                    Content="{StaticResource AngleDoubleRightIcon}"
+                                                    Foreground="{StaticResource PurpleNexusBrush}"
+                                                    Width="50"
+                                                    Height="50">
+
+                                            </Button>
+                                        </StackPanel>
+
+
+                                        <Button Grid.Column="1" 
+                                            Width="250" 
+                                            Background="{StaticResource TechNinetyPrimaryBrush}"
+                                            Padding="5 0 5 0"
+                                            x:Name="btnPay"
+                                            Cursor="Hand"
+                                            Command="{Binding OrderProcessControlMenuCommand}"
+                                            CommandParameter="Open"
+                                            BorderBrush="Transparent"
+                                            BorderThickness="0">
+
+                                            <Button.Content>
+
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Text="{StaticResource SSDShoppingCartIcon}"
+                                                                            Margin="5 8 5 5"
+                                                                            FontFamily="{StaticResource FontAwesomeSolid}"
+                                                                            Foreground="{StaticResource MilkBrush}"
+                                                                            FontSize="{StaticResource FontSizeRegular}"
+                                                                            FontWeight="Bold" 
+                                                                        />
+
+                                                    <TextBlock Text="Bayar :  "
+                                                                            Margin="5 8 5 5"
+                                                                            FontFamily="{StaticResource Expressway}"
+                                                                            Foreground="{StaticResource MilkBrush}"
+                                                                            FontSize="{StaticResource FontSizeRegular}"
+                                                                            FontWeight="Bold" 
+                                                                        />
+                                                    <TextBlock Text="{Binding TotalPay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ConverterCulture=id-ID, StringFormat=C0}"
+                                                        Margin="5 8 5 5"
+                                                        FontFamily="{StaticResource Expressway}"
+                                                        Foreground="{StaticResource MilkBrush}"
+                                                        FontSize="{StaticResource FontSizeRegular}"
+                                                        FontWeight="Bold" 
+                                                    />
+
+                                                                    </StackPanel>
+
+                                            </Button.Content>
+
+                                        </Button>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </Border>
+    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+
+    <Border>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Data List Menu Items -->
+            <ContentControl local:AnimateSlideInFromLeftProperty.Value="{Binding IsListProductsControlMenuVisible}"
+                            Background="Transparent" 
+                            HorizontalAlignment="Left" 
+                            Panel.ZIndex="10"
+                            Width="480"
+                            Height="645">
+
+                <Grid>
+                    <Border Background="{StaticResource DeepWhiteBrush}">
+                        <Border.Effect>
+                            <DropShadowEffect Opacity="0.2" ShadowDepth="5" />
+                        </Border.Effect>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <!-- Title -->
+                                <RowDefinition Height="25" />
+                                <!-- Content -->
+                                <RowDefinition Height="*" />
+                                <!-- Sub Tool-Bar -->
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <!-- Title bar content -->
+                            <Grid Background="{StaticResource GrayNexusBrush}" Panel.ZIndex="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0" Orientation="Horizontal">
+                                    <TextBlock Text="{StaticResource BarIcon}"
+                                           Foreground="{StaticResource NexusPrimaryBrush}"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           FontFamily="{StaticResource FontAwesome}">
+
+                                    </TextBlock>
+
+                                    <TextBlock Text="DAFTAR PRODUK"
+                                           Margin="20 0 0 0"
+                                           VerticalAlignment="Center"
+                                           Foreground="{StaticResource NexusPrimaryBrush}"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           FontFamily="{StaticResource Roboto}">
+
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                    <!-- Window control to closing the current menu -->
+                                    <Button Command="{Binding ListProductsControlMenuCommand}" 
+                                        CommandParameter="Close"
+                                        Style="{StaticResource SystemIcon}"
+                                        Cursor="Hand"
+                                        Foreground="{StaticResource NexusPrimaryBrush}">
+
+                                        <Button.Content>
+                                            <TextBlock Text="{StaticResource AngleDoubleLeftIcon}"
+                                                   Foreground="{StaticResource NexusPrimaryBrush}"
+                                                   FontFamily="{StaticResource FontAwesome}"
+                                                   FontSize="{StaticResource FontSizeRegular}"
+                                                   Background="Transparent"
+                                                   TextAlignment="Center"
+                                                   x:Name="txtclose"
+                                                   HorizontalAlignment="Stretch"
+                                                   
+                                         />
+                                        </Button.Content>
+
+                                    </Button>
+                                </StackPanel>
+
+                            </Grid>
+
+                            <!-- Main content -->
+                            <DataGrid Style="{StaticResource DataGridBase}"
+                                Panel.ZIndex="9"
+                                Grid.Row="1"
+                                BorderBrush="{StaticResource VeryLightBrush}" 
+                                BorderThickness="0" 
+                                Margin="0 5 0 5"
+                                Width="480"
+                                Height="570" 
+                                AutoGenerateColumns="False"
+                                ItemsSource="{Binding ProductListItemsCollection, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                SelectedItem="{Binding GetProductListItemModel, Mode=TwoWay}"
+                                FontFamily="{StaticResource Expressway}"
+                                FontSize="{StaticResource FontSizeSmall}"
+                                VerticalScrollBarVisibility="Auto"
+                                HorizontalScrollBarVisibility="Auto"
+                                IsReadOnly="False"
+                                CanUserAddRows="False"
+                                CanUserSortColumns="True"
+                                CanUserReorderColumns="True"
+                                CanUserResizeRows="False"
+                                CanUserResizeColumns="False"
+                                SelectionMode="Single">
+                                
+
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="ID" Width="AUTO" Binding="{Binding ProductId, Mode=TwoWay}"/>
+                                    <DataGridTextColumn Header="NAMA" Width="AUTO" Binding="{Binding ProductName, Mode=TwoWay}" />
+                                    <DataGridTextColumn Header="KATEGORI" Width="AUTO" Binding="{Binding ProductCategory, Mode=TwoWay}" />
+                                    <DataGridTextColumn Header="MEREK" Binding="{Binding Brand, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Width="AUTO"/>
+                                    <DataGridTextColumn Header="HARGA" Width="AUTO" Binding="{Binding Price, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" />
+                                </DataGrid.Columns>
+
+                            </DataGrid>
+
+                            <!-- Tool-bar -->
+                            <Border Grid.Row="2" Background="{StaticResource  DeepPurpleNexusBrush}" Width="Auto" Height="35">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Style="{StaticResource ButtonGrowIcon}"
+                                        Content="{StaticResource CartPlusIcon}"
+                                        FontSize="{StaticResource FontSizeXLarge}"
+                                        Foreground="{StaticResource MilkBrush}"
+                                        Width="45"
+                                        Height="45"
+                                        Cursor="Hand"
+                                        CommandParameter="Open"
+                                        Command="{Binding ConfirmOrderControlMenuCommand}"
+                                      />
+
+                                    <TextBox Style="{StaticResource BaseTextBox}"
+                                             Height="30"
+                                             Width="460"
+                                             BorderThickness="1" 
+                                             Grid.Column="1"
+                                             Margin="0 0 0 0"
+                                             Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                             TabIndex="0"
+                                             local:FocusAndSelectProperty.Value="True">
+                                        <TextBox.InputBindings>
+                                            <KeyBinding Key="Return"  Command="{Binding SearchProductCommand}" />
+                                            <KeyBinding Key="F5" Command="{Binding DataLoadedCommand}" />
+                                            <KeyBinding Key="Delete" Command="{Binding ClearSearchTextHistoryCommand}" />
+                                        </TextBox.InputBindings>
+
+                                    </TextBox>
+
+
+                                    <Button Style="{StaticResource ButtonIcons}"
+                                        Content="{StaticResource SearchIcon}"
+                                        FontSize="{StaticResource FontSizeXLarge}"
+                                        Width="45"
+                                        Height="45"
+                                        Command="{Binding SearchProductCommand}"
+                                        Grid.Column="2"
+                                      />
+
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+
+
+            </ContentControl>
+
+            <!-- confirm order control menu  -->
+            <ContentControl local:AnimateSlideInFromBottomProperty.Value="{Binding IsConfirmOrderControlMenuVisible}"
+                            Background="Transparent" 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Bottom"
+                            Panel.ZIndex="10"
+                            Width="850"
+                            Height="400">
+
+
+                <Border Background="{StaticResource DeepWhiteBrush}">
+                    <Border.Effect>
+                        <DropShadowEffect Opacity="0.2" ShadowDepth="5" />
+                    </Border.Effect>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <!-- Title -->
+                            <RowDefinition Height="25" />
+                            <!-- Content -->
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Title bar content -->
+                        <Grid Background="{StaticResource GrayNexusBrush}" Panel.ZIndex="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0" Orientation="Horizontal">
+                                <TextBlock Text="{StaticResource BarIcon}"
+                                           Foreground="{StaticResource NexusPrimaryBrush}"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           FontFamily="{StaticResource FontAwesome}">
+
+                                </TextBlock>
+
+                                <TextBlock Text="Dialog Konfirmasi Pembelian"
+                                           Margin="20 0 0 0"
+                                           VerticalAlignment="Center"
+                                           Foreground="{StaticResource NexusPrimaryBrush}"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           FontFamily="{StaticResource Roboto}">
+
+                                </TextBlock>
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                <!-- Window control to closing the current menu -->
+                                <Button Command="{Binding ConfirmOrderControlMenuCommand}" 
+                                        CommandParameter="Close"
+                                        Style="{StaticResource SystemIcon}"
+                                        Cursor="Hand"
+                                        Foreground="{StaticResource NexusPrimaryBrush}">
+
+                                    <Button.Content>
+                                        <TextBlock Text="{StaticResource AngleDoubleLeftIcon}"
+                                                   Foreground="{StaticResource NexusPrimaryBrush}"
+                                                   FontFamily="{StaticResource FontAwesome}"
+                                                   FontSize="{StaticResource FontSizeRegular}"
+                                                   Background="Transparent"
+                                                   TextAlignment="Center"
+                                                   HorizontalAlignment="Stretch"
+                                                   
+                                         />
+                                    </Button.Content>
+
+                                </Button>
+                            </StackPanel>
+
+                        </Grid>
+
+                        <!-- Main content -->
+                        <StackPanel Grid.Row="1" Margin="20 10 20 10">
+                            <DataGrid Panel.ZIndex="10"
+                                    BorderBrush="{StaticResource DarkGrayBrush}" 
+                                    BorderThickness="1" 
+                                    Margin="0 0 0 10"
+                                    Padding="2"
+                                    Style="{StaticResource ConfirmationOrder}"
+                                    Height="320" 
+                                    IsReadOnly="False"
+                                    Width="840"
+                                    x:Name="Dg_OrderItems"
+                                    AutoGenerateColumns="False"
+                                    FontFamily="{StaticResource Roboto}"
+                                    ItemsSource="{Binding ConfirmOrderListItemsCollection, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                    SelectedItem="{Binding GetConfirmOrderListItemModel, Mode=TwoWay}"
+                                    VerticalScrollBarVisibility="Auto"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    CanUserAddRows="False"
+                                    CanUserSortColumns="True"
+                                    CanUserReorderColumns="True"
+                                    CanUserResizeRows="False"
+                                    CanUserResizeColumns="False">
+
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="        TINDAKAN" Width="Auto" IsReadOnly="False">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <Border CornerRadius="5" Margin="0 0 10 0">
+                                                        <Button WindowChrome.IsHitTestVisibleInChrome="True"
+                                                                                    Padding="2"
+                                                                                    BorderThickness="0"
+                                                                                    VerticalAlignment="Center"
+                                                                                    HorizontalAlignment="Center"
+                                                                                    BorderBrush="Transparent"
+                                                                                    Background="{StaticResource YouTubeBrush}"
+                                                                                    Width="45"
+                                                                                    Command="{Binding TransactionViewModel.DeleteConfirmOrderItemsCommand, Source={x:Static local:ViewModelLocator.Instance}}"
+                                                                                    Margin="0 0 0 10"
+                                                                                    Cursor="Hand"
+                                                                                    x:Name="DelShortcutButton"
+                                                                                    Height="40">
+
+                                                            <Button.Content>
+                                                                <TextBlock Text="{StaticResource WindowCloseIcon}"
+                                                                                                FontFamily="{StaticResource FontAwesome}"
+                                                                                                Foreground="{StaticResource VeryLightBrush}"
+                                                                                                Background="Transparent"
+                                                                                                VerticalAlignment="Center"
+                                                                                                HorizontalAlignment="Center"/>
+                                                            </Button.Content>
+
+                                                            <Button.Triggers>
+                                                                <EventTrigger RoutedEvent="MouseEnter">
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard>
+                                                                            <ColorAnimation To="{StaticResource Brave}" 
+                                                                                                                Duration="0:0:0.4" 
+                                                                                                                Storyboard.TargetProperty="Background.Color"
+                                                                                                                Storyboard.TargetName="DelShortcutButton" 
+                                                                                                    />
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </EventTrigger>
+                                                                <EventTrigger RoutedEvent="MouseLeave">
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard>
+                                                                            <ColorAnimation To="{StaticResource YouTubeColor}" 
+                                                                                                                Duration="0:0:0.4" 
+                                                                                                                Storyboard.TargetProperty="Background.Color"
+                                                                                                                Storyboard.TargetName="DelShortcutButton" 
+                                                                                                    />
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </EventTrigger>
+                                                            </Button.Triggers>
+
+                                                        </Button>
+
+
+
+
+                                                    </Border>
+                                                    <Border CornerRadius="5">
+                                                        <Button WindowChrome.IsHitTestVisibleInChrome="True"
+                                                            Padding="2"
+                                                            BorderThickness="0"
+                                                            VerticalAlignment="Center"
+                                                            HorizontalAlignment="Center"
+                                                            BorderBrush="Transparent"
+                                                            Background="{StaticResource WriteUpPrimaryBrush}"
+                                                            Width="45"
+                                                            Margin="0 0 0 10"
+                                                            Command="{Binding TransactionViewModel.AddOrderListItemCommand, Source={x:Static local:ViewModelLocator.Instance}}"
+                                                            Cursor="Hand"
+                                                            x:Name="AddShortcutButton"
+                                                            Height="40">
+
+                                                            <Button.Content>
+                                                                <TextBlock Text="{StaticResource SSDPlusIcon}"
+                                                                            FontFamily="{StaticResource FontAwesome}"
+                                                                            Foreground="{StaticResource VeryLightBrush}"
+                                                                            Background="Transparent"
+                                                                            VerticalAlignment="Center"
+                                                                            HorizontalAlignment="Center"/>
+                                                            </Button.Content>
+
+                                                            <Button.Triggers>
+                                                                <EventTrigger RoutedEvent="MouseEnter">
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard>
+                                                                            <ColorAnimation To="{StaticResource WriteUpBlue}" 
+                                                                                            Duration="0:0:0.4" 
+                                                                                            Storyboard.TargetProperty="Background.Color"
+                                                                                            Storyboard.TargetName="AddShortcutButton" 
+                                                                                                    />
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </EventTrigger>
+                                                                <EventTrigger RoutedEvent="MouseLeave">
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard>
+                                                                            <ColorAnimation To="{StaticResource WriteUpPrimary}" 
+                                                                                                                Duration="0:0:0.4" 
+                                                                                                                Storyboard.TargetProperty="Background.Color"
+                                                                                                                Storyboard.TargetName="AddShortcutButton" 
+                                                                                                    />
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </EventTrigger>
+                                                            </Button.Triggers>
+
+                                                        </Button>
+
+
+
+
+                                                    </Border>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="ID PRODUK">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock VerticalAlignment="Center" FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" Width="Auto" Text="{Binding ProductId, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="NAMA">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock VerticalAlignment="Center" FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" Width="Auto" Text="{Binding ProductName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="KATEGORI">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock VerticalAlignment="Center"  FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" Width="Auto" Text="{Binding ProductCategory, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="MEREK">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Width="Auto" FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" VerticalAlignment="Center" Text="{Binding Brand, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="HARGA">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock VerticalAlignment="Center"  FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" Text="{Binding Price, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay,  StringFormat=C0, ConverterCulture=id-ID}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="JUMLAH">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox x:Name="txtQty" VerticalAlignment="Center" FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" Style="{StaticResource TextBoxStyle}" Text="{Binding Quantity, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="DISKON">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBox x:Name="txtDisc" VerticalAlignment="Center" FontFamily="{StaticResource Roboto}" FontSize="{StaticResource FontSizeRegular}" Style="{StaticResource TextBoxStyle}" Text="{Binding Discount, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                  
+                                    <DataGridTemplateColumn Header="GAMBAR" Width="180" IsReadOnly="True">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Border CornerRadius="5">
+                                                    <Image Source="{Binding ImgUrl, Converter={local:ThumbnailValueConverter}}" 
+                                                                       Height="60" 
+                                                                       Width="60"
+                                                                       local:ClipFromBorderProperty.Value="True"/>
+                                                </Border>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    
+                                   
+
+                                </DataGrid.Columns>
+
+                                <DataGrid.InputBindings>
+                                    <KeyBinding Command="{Binding AddOrderListItemCommand}" Key="Return" />
+                                    <KeyBinding Command="{Binding DeleteConfirmOrderItemsCommand}" Key="Delete" />
+                                </DataGrid.InputBindings>
+
+                            </DataGrid>
+                            <Border Background="{StaticResource TechNinetyPrimaryBrush}" Margin="0 10 0 5" VerticalAlignment="Bottom" Panel.ZIndex="19">
+                                <TextBlock Text="Perhatian: Produk yang telah ditambahkan kedalam Daftar Pembelian tidak dapat dibatalkan kembali!"
+                                           Foreground="{StaticResource YouTubeBrush}"
+                                           FontStyle="Italic"
+                                           FontWeight="Bold"
+                                           FontFamily="{StaticResource Roboto}"
+                                           FontSize="{StaticResource FontSizeSmall}" 
+                                />
+                            </Border>
+
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+            </ContentControl>
+
+            <!-- Order Process Items control menu  -->
+            <ContentControl local:AnimateSlideInFromBottomProperty.Value="{Binding IsOrderProcessControlMenuVisible}"
+                            Background="Transparent" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Panel.ZIndex="10"
+                            Width="820"
+                            Height="400">
+
+                <Grid>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="4" Opacity="0.5" />
+                        </Border.Effect>
+                    </Border>
+
+                    <Border Background="{StaticResource DeepWhiteBrush}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <!-- Title -->
+                                <RowDefinition Height="25" />
+                                <!-- Content -->
+                                <RowDefinition Height="*" />
+                                <!-- Sub Content -->
+                                <RowDefinition Height="Auto" />
+                                <!-- Line -->
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <!-- Title bar content -->
+                            <Grid Background="{StaticResource GrayNexusBrush}" Panel.ZIndex="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0" Orientation="Horizontal">
+                                    <TextBlock Text="{StaticResource BalanceScaleIcon}"
+                                           Foreground="{StaticResource NexusPrimaryBrush}"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           FontFamily="{StaticResource FontAwesome}">
+
+                                    </TextBlock>
+
+                                    <TextBlock Text="Proses Pembelian Produk"
+                                           Margin="20 0 0 0"
+                                           VerticalAlignment="Center"
+                                           Foreground="{StaticResource NexusPrimaryBrush}"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           FontFamily="{StaticResource Roboto}">
+
+                                    </TextBlock>
+                                </StackPanel>
+
+                                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                                    <!-- Window control to closing the current menu -->
+                                    <Button Command="{Binding OrderProcessControlMenuCommand}" 
+                                        CommandParameter="Close"
+                                        Style="{StaticResource SystemIcon}"
+                                        Cursor="Hand"
+                                        Foreground="{StaticResource NexusPrimaryBrush}">
+
+                                        <Button.Content>
+                                            <TextBlock Text="{StaticResource AngleDoubleLeftIcon}"
+                                                   Foreground="{StaticResource NexusPrimaryBrush}"
+                                                   FontFamily="{StaticResource FontAwesome}"
+                                                   FontSize="{StaticResource FontSizeRegular}"
+                                                   Background="Transparent"
+                                                   TextAlignment="Center"
+                                                   HorizontalAlignment="Stretch"
+                                                   
+                                         />
+                                        </Button.Content>
+
+                                    </Button>
+                                </StackPanel>
+
+                            </Grid>
+
+                            <!-- Main content -->
+                            <Grid Grid.Row="1" Margin="10 10 10 10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Content -->
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <!-- Total -->
+                                    <Border Background="{StaticResource PurpleNexusBrush}" Margin="0 2.5 10 10" Width="520" Height="75" HorizontalAlignment="Left" Padding="10">
+                                        <StackPanel>
+                                            <TextBlock Text="TOTAL:"
+                                               Foreground="{StaticResource VeryLightBrush}"
+                                               FontSize="{StaticResource FontSizeRegular}"
+                                               FontWeight="Bold"
+                                               FontFamily="{StaticResource Neuropol}"/>
+
+                                            <TextBlock Text="{Binding TotalPay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, ConverterCulture=id-ID, StringFormat=C0}"
+                                               Foreground="{StaticResource VeryLightBrush}"
+                                               FontSize="{StaticResource FontSizeXXLarge}"
+                                               FontWeight="Bold"
+                                               Margin="65 0 0 0"
+                                               FontFamily="{StaticResource Expressway}"/>
+                                        </StackPanel>
+
+                                    </Border>
+
+                                    <!-- Options Payment -->
+                                    <TabControl Grid.Row="1">
+                                        <TabItem Header="UANG TUNAI" Width="105">
+                                            <Border Margin="0 0 0 0">
+                                                <StackPanel Margin="0">
+                                                    <TextBox Style="{StaticResource BaseTextBox}"
+                                                     BorderBrush="{StaticResource PurpleNexusBrush}"
+                                                     BorderThickness="1"
+                                                     FontSize="{StaticResource FontSizeXLarge}"
+                                                     Width="514"
+                                                     Height="70"
+                                                     Margin="-4 0 0 0"
+                                                     VerticalContentAlignment="Center"
+                                                     FontFamily="{StaticResource Roboto}"
+                                                     Text="{Binding TouchPadNumber, ConverterCulture=id-ID, StringFormat=C0, UpdateSourceTrigger=PropertyChanged}"
+                                                     Tag="Masukan nominal uang pembayaran"
+                                                     local:IsNotAllowedCharacters.Value="True"
+                                                >
+                                                        <TextBox.InputBindings>
+                                                            <KeyBinding Key="Return" Command="{Binding ProcessAndPrintTOCommand}" />
+                                                        </TextBox.InputBindings>
+
+                                                    </TextBox>
+
+                                                    <Border Margin="-4 5 6 0" Background="{StaticResource PurpleNexusBrush}" Padding="10" Width="Auto" Height="70">
+                                                        <StackPanel>
+                                                            <TextBlock Text="KEMBALI:"
+                                                                   FontFamily="{StaticResource Roboto}"
+                                                                   FontSize="{StaticResource FontSizeRegular}"
+                                                                   FontWeight="Bold"
+                                                                   HorizontalAlignment="Left"
+                                                                   VerticalAlignment="Center"
+                                                                   Foreground="{StaticResource MilkBrush}" 
+                                                         />
+
+
+                                                            <TextBlock Text="{Binding Change, UpdateSourceTrigger=PropertyChanged, ConverterCulture=id-ID, StringFormat=C0}"
+                                                                   FontFamily="{StaticResource Expressway}"
+                                                                   FontSize="{StaticResource FontSizeLarge}"
+                                                                   FontWeight="Bold"
+                                                                   HorizontalAlignment="Right"
+                                                                   VerticalAlignment="Center"
+                                                                   Margin="-4 0 0 0"
+                                                                   Foreground="{StaticResource MilkBrush}" 
+                                                         />
+
+                                                        </StackPanel>
+                                                    </Border>
+
+                                                </StackPanel>
+                                            </Border>
+                                        </TabItem>
+
+                                  
+
+
+
+                                    </TabControl>
+
+
+
+                                </Grid>
+
+                                <!-- Touch-Pad Number -->
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <!-- Touch-Pad Number 7, 8, 9, C -->
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="7"
+                                            Width="65"
+                                            Height="65"
+                                            CommandParameter="7"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Margin="2" />
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="8"
+                                            Width="65"
+                                            Height="65"
+                                            CommandParameter="8"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Margin="2"
+                                            Grid.Column="1"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="9"
+                                            Width="65"
+                                            CommandParameter="9"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Height="65"
+                                            Margin="2"
+                                            Grid.Column="2"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="{StaticResource LongArrowLeftIcon}"
+                                            FontFamily="{StaticResource FontAwesome}"
+                                            Width="65"
+                                            Height="65"
+                                            CommandParameter="Del"
+                                            Command="{Binding TouchPadOperationCommand}"
+                                            Margin="2"
+                                            Grid.Column="3"/>
+
+                                    </Grid>
+
+                                    <!-- Touch-Pad Number 4, 5, 6, C -->
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="4"
+                                            Width="65"
+                                            Height="65"
+                                            CommandParameter="4"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Margin="2" />
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="5"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            CommandParameter="5"
+                                            Grid.Column="1"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="6"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            CommandParameter="6"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Grid.Column="2"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="C"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            CommandParameter="C"
+                                            Command="{Binding TouchPadOperationCommand}"
+                                            Grid.Column="3"/>
+
+                                    </Grid>
+
+                                    <!-- Touch-Pad Number 1, 2, 3, +/- -->
+                                    <Grid Grid.Row="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="1"
+                                            Width="65"
+                                            Height="65"
+                                            CommandParameter="1"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Margin="2" />
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="2"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            CommandParameter="2"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Grid.Column="1"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="3"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            CommandParameter="3"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            Grid.Column="2"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="&#x00b1;"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            CommandParameter="+/-"
+                                            Command="{Binding TouchPadOperationCommand}"
+                                            Grid.Column="3"/>
+
+                                    </Grid>
+
+                                    <!-- Touch-Pad Number ., 0, Enter -->
+                                    <Grid Grid.Row="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="."
+                                            Width="65"
+                                            Height="65"
+                                            Command="{Binding TouchPadOperationCommand}"
+                                            CommandParameter="."
+                                            Margin="2" />
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="0"
+                                            Width="65"
+                                            Height="65"
+                                            Margin="2"
+                                            Command="{Binding TouchPadNumberCommand}"
+                                            CommandParameter="0"
+                                            Grid.Column="1"/>
+
+                                        <Button Style="{StaticResource BaseButton}"
+                                            Content="Enter"
+                                            Command="{Binding ProcessAndPrintTOCommand}"
+                                            Width="134"
+                                            Height="65"
+                                            Margin="2"
+                                            Grid.Column="2"/>
+
+
+                                    </Grid>
+
+
+
+                                </Grid>
+
+                            </Grid>
+
+                            <Grid Grid.Row="2" Margin="10 0 10 20">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 18 0">
+                                    <Button Style="{StaticResource BaseButton}"
+                                            FontFamily="{StaticResource FontAwesome}"
+                                            Foreground="{StaticResource MilkBrush}"
+                                            FontSize="{StaticResource FontSizeRegular}"
+                                            Width="80"
+                                            Height="Auto"
+                                            Margin="0 0 3 0"
+                                            Content="{StaticResource PrintIcon}" >
+
+
+                                    </Button>
+
+
+                                </StackPanel>
+                            </Grid>
+
+                            <!-- Line -->
+                            <Border Grid.Row="3" Background="{StaticResource PurpleNexusBrush}" Height="5" />
+
+                        </Grid>
+                    </Border>
+
+                </Grid>
+
+            </ContentControl>
+        </Grid>
+
+    </Border>
+    
+</local:BasePage>

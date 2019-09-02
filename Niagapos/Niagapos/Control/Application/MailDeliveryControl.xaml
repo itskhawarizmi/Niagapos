@@ -1,0 +1,274 @@
+﻿<UserControl x:Class="Pospedia.MailDeliveryControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pospedia"
+             xmlns:core="clr-namespace:Pospedia.Core;assembly=Pospedia.Core"
+             d:DataContext="{x:Static core:MailDeliveryDesignModel.Instance}"
+             mc:Ignorable="d">
+
+    <Border Background="{StaticResource GrayNexusBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Title -->
+            <Grid Background="{StaticResource DarkPurpleNexusBrush}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="GSN Fast-Mail Delivery System"
+                               Foreground="{StaticResource MilkBrush}"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"
+                               Grid.ColumnSpan="2"
+                               Padding="15"
+                               FontSize="{StaticResource FontSizeRegular}" />
+
+                    <Button Grid.Column="1"
+                            Style="{StaticResource ButtonGrowIcon}"
+                            Content="{StaticResource PowerOffIcon}"
+                            Margin="0 0 10 0"
+                            Width="40"
+                            Command="{Binding CloseCommand}"
+                    />
+
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Border Background="{StaticResource PurpleNexusBrush}" Height="80" Width="1015" Margin="20 10 20 10">
+                    <StackPanel Orientation="Horizontal" Panel.ZIndex="1">
+                        <TextBox Text="{Binding To}"
+                                 Style="{StaticResource TextBoxStyle}"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Width="270"
+                                 Tag="To.."
+                                 Margin="20 0 0 0"
+                                 />
+
+                        <TextBox Text="{Binding Cc}"
+                                 Style="{StaticResource TextBoxStyle}"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Width="270"
+                                 Tag="Cc.."
+                                 Margin="83 0 0 0"
+                                 />
+
+                        <TextBox Text="{Binding Bcc}"
+                                 Style="{StaticResource TextBoxStyle}"
+                                 VerticalAlignment="Center"
+                                 HorizontalAlignment="Center"
+                                 Width="270"
+                                 Tag="Bcc.."
+                                 Margin="80 0 0 0"
+                                 />
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="1" Background="{StaticResource DeepPurpleNexusBrush}" Height="Auto" Width="1015" Margin="20 10 20 10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Text="{Binding Subject}"
+                                     Tag="Subject.."
+                                     Width="387" 
+                                     Style="{StaticResource TextBoxStyle}"
+                                     Margin="20"
+                            />
+
+                            <ComboBox ItemsSource="{Binding Items}"
+                                      SelectedItem="{Binding MailServiceIsSelectedItem}"
+                                      DisplayMemberPath="Host" 
+                                      Style="{StaticResource BaseComboBox}"
+                                      Width="Auto"
+                                      Height="30"
+                                      Margin="-20 0 0 0"
+                                      BorderThickness="0"
+                                      
+                             />
+
+                        </StackPanel>
+
+                        <Grid Grid.Row="1">
+                            <TabControl Background="{StaticResource DeepPurpleNexusBrush}" Height="Auto">
+                                <TabItem Background="{StaticResource PurpleNexusBrush}"
+                                         Header="Compose"
+                                         Foreground="{StaticResource MilkBrush}"
+                                         FontFamily="{StaticResource Roboto}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         Height="55"
+                                         >
+
+                                    <TextBox Text="{Binding Message}"
+                                             Style="{StaticResource TextBoxStyle}"
+                                             Height="200"
+                                             Width="1010"
+                                             Margin="0"
+                                             Tag="Message..."
+                                             VerticalScrollBarVisibility="Auto"
+                                             HorizontalScrollBarVisibility="Auto"
+                                             TextWrapping="Wrap"
+                                             AcceptsReturn="True"
+                                             SpellCheck.IsEnabled="True"
+                                             Language="en-US"
+                                    />
+
+                                </TabItem>
+
+                                <TabItem Background="{StaticResource PurpleNexusBrush}"
+                                         Header="HTML Mode"
+                                         Foreground="{StaticResource MilkBrush}"
+                                         FontFamily="{StaticResource Roboto}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         >
+                                    <TextBox Text="{Binding Message}"
+                                             Style="{StaticResource TextBoxStyle}"
+                                             Height="200"
+                                             Width="1010"
+                                             Margin="0"
+                                             Tag="Message..."
+                                             VerticalScrollBarVisibility="Auto"
+                                             HorizontalScrollBarVisibility="Auto"
+                                             TextWrapping="Wrap"
+                                             AcceptsReturn="True"
+                                             SpellCheck.IsEnabled="True"
+                                             Language="en-US"
+                                    />
+
+                                </TabItem>
+
+                                <TabItem Background="{StaticResource PurpleNexusBrush}"
+                                         Header="Attachment"
+                                         Foreground="{StaticResource MilkBrush}"
+                                         FontFamily="{StaticResource Roboto}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         >
+
+                                    <Border Background="{StaticResource GrayNexusBrush}">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+
+                                            <StackPanel Orientation="Horizontal" Margin="10 10 10 0" Background="{StaticResource GrayNexusBrush}">
+                                                <Button Content="Add Attachment" FontSize="{StaticResource FontSizeSmall}" Style="{StaticResource BaseButton}" />
+                                                <Button Content="Clear Attachment" FontSize="{StaticResource FontSizeSmall}" Style="{StaticResource BaseButton}"/>
+                                                <Button Content="Informations" FontSize="{StaticResource FontSizeSmall}" Style="{StaticResource BaseButton}"/>
+                                            </StackPanel>
+
+                                            <Border Grid.Row="1" Background="{StaticResource GrayNexusBrush}" Margin="10 1 10 10" BorderThickness="0">
+                                                <ListBox Background="{StaticResource GrayNexusBrush}" Height="120" Foreground="{StaticResource PurpleNexusBrush}" BorderThickness="0" BorderBrush="Transparent" >
+                                                    
+                                                </ListBox>
+                                            </Border>
+                                            
+                                        </Grid>
+                                    </Border>
+                                    
+                                </TabItem>
+
+                                <TabItem Background="{StaticResource PurpleNexusBrush}"
+                                         Header="Encryptions"
+                                         Foreground="{StaticResource MilkBrush}"
+                                         FontFamily="{StaticResource Roboto}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         >
+                                    <TextBox Text="{Binding Message}"
+                                             Style="{StaticResource TextBoxStyle}"
+                                             Height="200"
+                                             Width="1010"
+                                             Margin="0"
+                                             Tag="Message..."
+                                             VerticalScrollBarVisibility="Auto"
+                                             HorizontalScrollBarVisibility="Auto"
+                                             TextWrapping="Wrap"
+                                             AcceptsReturn="True"
+                                             SpellCheck.IsEnabled="True"
+                                             Language="en-US"
+                                    />
+
+                                </TabItem>
+                                <TabItem Background="{StaticResource PurpleNexusBrush}"
+                                         Header="Decryptions"
+                                         Foreground="{StaticResource MilkBrush}"
+                                         FontFamily="{StaticResource Roboto}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         >
+                                    <TextBox Text="{Binding Message}"
+                                             Style="{StaticResource TextBoxStyle}"
+                                             Height="200"
+                                             Width="1010"
+                                             Margin="0"
+                                             Tag="Message..."
+                                             VerticalScrollBarVisibility="Auto"
+                                             HorizontalScrollBarVisibility="Auto"
+                                             TextWrapping="Wrap"
+                                             AcceptsReturn="True"
+                                             SpellCheck.IsEnabled="True"
+                                             Language="en-US"
+                                    />
+
+                                </TabItem>
+
+                            </TabControl>
+
+                        </Grid>
+
+                    </Grid>
+                </Border>
+
+                <Border Grid.Row="2" Background="{StaticResource PurpleNexusBrush}" Height="160" Margin="20 15 20 0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Border Background="{StaticResource DarkPurpleNexusBrush}" Height="Auto">
+                            <TextBlock Text="Account Config"
+                                       Padding="10"
+                                       Foreground="{StaticResource MilkBrush}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center" 
+                                       FontSize="{StaticResource FontSizeRegular}"
+                             />
+                        </Border>
+
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="30 0 0 0">
+
+                            <local:TextEntryControl Height="35" Width="450" DataContext="{Binding Email}" />
+                            <local:PasswordControl Height="35" Width="450" Margin="50 0 0 0" DataContext="{Binding Password}" />
+
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+            </Grid>
+            
+        </Grid>
+    </Border>
+
+
+</UserControl>

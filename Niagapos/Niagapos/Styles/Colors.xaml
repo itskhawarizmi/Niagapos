@@ -1,0 +1,260 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Niagapos">
+
+
+
+    <!-- Visual Dark Theme -->
+    <!-- Blue -->
+    <Color x:Key="VisualAzure1Color">#FF007ACC</Color>
+    <Color x:Key="VisualAzure2Color">#FF3399FF</Color>
+    <!-- Purple -->
+    <Color x:Key="VisualAbbys1Color">#FF44355B</Color>
+    <Color x:Key="VisualAbbys2Color">#FF2C223A</Color>
+    <Color x:Key="VisualAbbys3Color">#FF231B2E</Color>
+    <!-- White -->
+    <Color x:Key="VisualLight1Color">#FFF1F1F1</Color>
+    <Color x:Key="VisualLight2Color">#FFEEEEF2</Color>
+    <Color x:Key="VisualLight3Color">#FFF5F5F5</Color>
+    <Color x:Key="VisualLight4Color">#FFF6F6F6</Color>
+    <Color x:Key="VisualLight5Color">#FFE7E8EC</Color>
+    <Color x:Key="VisualLight6Color">#FFFCFCFC</Color>
+    <Color x:Key="VisualLight7Color">#FFCCCEDB</Color>
+    <Color x:Key="VisualLight8Color">#FFF7F7F9</Color>
+    <!-- Black -->
+    <Color x:Key="VisualDark1Color">#FF252526</Color>
+    <Color x:Key="VisualDark2Color">#FF2D2D30</Color>
+    <Color x:Key="VisualDark3Color">#FF3E3E40</Color>
+    <Color x:Key="VisualDark4Color">#FF1B1B1C</Color>
+    <Color x:Key="VisualDark5Color">#FF292929</Color>
+    <Color x:Key="VisualDark6Color">#FF3F3F46</Color>
+    <Color x:Key="VisualDark7Color">#FF333337</Color>
+    <Color x:Key="VisualDark8Color">#FF656565</Color>
+    <Color x:Key="VisualDark9Color">#72555555</Color>
+    <Color x:Key="VisualDark10Color">#FF1E1E1E</Color>
+    <!-- Orange -->
+    <Color x:Key="VisualFire1Color">#FFF9BF3B</Color>
+    <!-- Visual Darkness -->
+    <Color x:Key="VisualDarkness1Color">#44355B</Color>
+    <Color x:Key="VisualDarkness2Color">#53346c</Color>
+    <Color x:Key="VisualDarkness7Color">#3D3351</Color>
+
+    <!-- White -->
+    <SolidColorBrush x:Key="VisualLight1Brush" Color="{StaticResource VisualLight1Color}" />
+    <SolidColorBrush x:Key="VisualLight2Brush" Color="{StaticResource VisualLight2Color}" />
+    <SolidColorBrush x:Key="VisualLight3Brush" Color="{StaticResource VisualLight3Color}" />
+    <SolidColorBrush x:Key="VisualLight4Brush" Color="{StaticResource VisualLight4Color}" />
+    <SolidColorBrush x:Key="VisualLight5Brush" Color="{StaticResource VisualLight5Color}" />
+    <SolidColorBrush x:Key="VisualLight6Brush" Color="{StaticResource VisualLight6Color}" />
+    <SolidColorBrush x:Key="VisualLight7Brush" Color="{StaticResource VisualLight7Color}" />
+    <SolidColorBrush x:Key="VisualLight8Brush" Color="{StaticResource VisualLight8Color}" />
+    <!-- Blue -->
+    <SolidColorBrush x:Key="VisualAzure1Brush" Color="{StaticResource VisualAzure1Color}" />
+    <SolidColorBrush x:Key="VisualAzure2Brush" Color="{StaticResource VisualAzure2Color}" />
+    <!-- Purple -->
+    <SolidColorBrush x:Key="VisualAbbys1Brush" Color="{StaticResource VisualAbbys1Color}" />
+    <SolidColorBrush x:Key="VisualAbbys2Brush" Color="{StaticResource VisualAbbys2Color}" />
+    <SolidColorBrush x:Key="VisualAbbys3Brush" Color="{StaticResource VisualAbbys3Color}" />
+    <!-- Black -->
+    <SolidColorBrush x:Key="VisualDark1Brush" Color="{StaticResource VisualDark1Color}" />
+    <SolidColorBrush x:Key="VisualDark2Brush" Color="{StaticResource VisualDark2Color}" />
+    <SolidColorBrush x:Key="VisualDark3Brush" Color="{StaticResource VisualDark3Color}" />
+    <SolidColorBrush x:Key="VisualDark4Brush" Color="{StaticResource VisualDark4Color}" />
+    <SolidColorBrush x:Key="VisualDark5Brush" Color="{StaticResource VisualDark5Color}" />
+    <SolidColorBrush x:Key="VisualDark6Brush" Color="{StaticResource VisualDark6Color}" />
+    <SolidColorBrush x:Key="VisualDark7Brush" Color="{StaticResource VisualDark7Color}" />
+    <SolidColorBrush x:Key="VisualDark8Brush" Color="{StaticResource VisualDark8Color}" />
+    <SolidColorBrush x:Key="VisualDark9Brush" Color="{StaticResource VisualDark9Color}" />
+    <SolidColorBrush x:Key="VisualDark10Brush" Color="{StaticResource VisualDark10Color}" />
+    <!-- Visual Darkness -->
+    <SolidColorBrush x:Key="VisualDarkness1Brush" Color="{StaticResource VisualDarkness1Color}" />
+    <SolidColorBrush x:Key="VisualDarkness2Brush" Color="{StaticResource VisualDarkness2Color}" />
+    <SolidColorBrush x:Key="VisualDarkness7Brush" Color="{StaticResource VisualDarkness7Color}" />
+    <!-- Orange -->
+    <SolidColorBrush x:Key="VisualFire1Brush" Color="{StaticResource VisualFire1Color}" />
+
+
+
+
+
+
+    <!-- End Visual Dark Theme -->
+
+
+
+    <!-- Nexus Section -->
+    <Color x:Key="NexusPrimary">#4b367b</Color>
+    <Color x:Key="SmoothPurpleNexus">#68217a</Color>
+    
+    <SolidColorBrush x:Key="NexusPrimaryBrush" Color="{StaticResource NexusPrimary}" />
+    <SolidColorBrush x:Key="SmoothPurpleNexusBrush" Color="{StaticResource SmoothPurpleNexus}" />
+    <!-- End Point -->
+
+    <!-- Default Color Section -->
+    <Color x:Key="DefaultBlue">#007bff</Color>
+    <Color x:Key="DefaultRed">#dc3545</Color>
+    <Color x:Key="DefaultYellow">#ffc107</Color>
+    <Color x:Key="DefaultGreen">#28a745</Color>
+    <Color x:Key="DefaultGray">#6c757d</Color>
+    <Color x:Key="DefaultBlack">#343a40</Color>
+    <Color x:Key="DefaultLight">#f8f9fa</Color>
+    <Color x:Key="DefaultWhite">#ffffff</Color>
+    <Color x:Key="DefaultTosca">#17a2b8</Color>
+    <Color x:Key="DefaultWhiteMilk">#f9f9f9</Color>
+    <Color x:Key="DefaultWhiteCream">#eeeeee</Color>
+
+    <SolidColorBrush x:Key="DefaultBlueBrush" Color="{StaticResource DefaultBlue}" />
+    <SolidColorBrush x:Key="DefaultRedBrush" Color="{StaticResource DefaultRed}" />
+    <SolidColorBrush x:Key="DefaultYellowBrush" Color="{StaticResource DefaultYellow}" />
+    <SolidColorBrush x:Key="DefaultBlackBrush" Color="{StaticResource DefaultBlack}" />
+    <SolidColorBrush x:Key="DefaultWhiteBrush" Color="{StaticResource DefaultWhite}" />
+    <SolidColorBrush x:Key="DefaultLightBrush" Color="{StaticResource DefaultLight}" />
+    <SolidColorBrush x:Key="DefaultGrayBrush" Color="{StaticResource DefaultGray}" />
+    <SolidColorBrush x:Key="DefaultToscaBrush" Color="{StaticResource DefaultTosca}" />
+    <SolidColorBrush x:Key="DefaultGreenBrush" Color="{StaticResource DefaultGreen}" />
+    <SolidColorBrush x:Key="DefaultWhiteMilkBrush" Color="{StaticResource DefaultWhiteMilk}" />
+    <SolidColorBrush x:Key="DefaultWhiteCreamBrush" Color="{StaticResource DefaultWhiteCream}" />
+    <!-- End Point -->
+
+
+    <!-- WriteUp Color Section -->
+    <Color x:Key="WriteUpPrimary">#446CB3</Color>
+    <Color x:Key="WriteUpRed">#cd201f</Color>
+    <Color x:Key="WriteUpTosca">#29c5f6</Color>
+    <Color x:Key="WriteUpBlue">#516eab</Color>
+    <Color x:Key="WriteUpLight">#fafafa</Color>
+
+
+    <SolidColorBrush x:Key="WriteUpPrimaryBrush" Color="{StaticResource WriteUpPrimary}" />
+    <SolidColorBrush x:Key="WriteUpRedBrush" Color="{StaticResource WriteUpRed}" />
+    <SolidColorBrush x:Key="WriteUpBlueBrush" Color="{StaticResource WriteUpBlue}" />
+    <SolidColorBrush x:Key="WriteUpLightBrush" Color="{StaticResource WriteUpLight}" />
+    <SolidColorBrush x:Key="WriteUpToscaBrush" Color="{StaticResource WriteUpTosca}" />
+    <!-- End Point -->
+
+
+
+    <!-- TechNinety -->
+    <Color x:Key="TechNinetyPrimary">#f9bf3b</Color>
+    <Color x:Key="TechNinetyDark">#2a3744</Color>
+    <Color x:Key="TechNinetyTransparentDark">#002a3744</Color>
+    <Color x:Key="TechNinetyDeep">#30373b</Color>
+    <Color x:Key="TechNinetyGray">#454b4f</Color>
+
+    <SolidColorBrush x:Key="TechNinetyPrimaryBrush" Color="{StaticResource TechNinetyPrimary}" />
+    <SolidColorBrush x:Key="TechNinetyDeepBrush" Color="{StaticResource TechNinetyDeep}" />
+    <SolidColorBrush x:Key="TechNinetyDarkBrush" Color="{StaticResource TechNinetyDark}" />
+    <SolidColorBrush x:Key="TechNinetyTransparentDarkBrush" Color="{StaticResource TechNinetyTransparentDark}" />
+    <SolidColorBrush x:Key="TechNinetyGrayBrush" Color="{StaticResource TechNinetyGray}" />
+    <!-- End Point -->
+
+
+    <!-- Social Network Color Section -->
+    <Color x:Key="FacebookColor">#516eab</Color>
+    <Color x:Key="TwitterColor">#29c5f6</Color>
+    <Color x:Key="YouTubeColor">#cd201f</Color>
+    <Color x:Key="InstagramColor">#4e729a</Color>
+    <Color x:Key="GoogleColor">#cb2027</Color>
+    <Color x:Key="InternetColor">#ffc200</Color>
+
+    <SolidColorBrush x:Key="FacebookBrush" Color="{StaticResource FacebookColor}" />
+    <SolidColorBrush x:Key="TwitterBrush" Color="{StaticResource TwitterColor}" />
+    <SolidColorBrush x:Key="YouTubeBrush" Color="{StaticResource YouTubeColor}" />
+    <SolidColorBrush x:Key="InstagramBrush" Color="{StaticResource InstagramColor}" />
+    <SolidColorBrush x:Key="GoogleBrush" Color="{StaticResource GoogleColor}" />
+    <SolidColorBrush x:Key="InternetBrush" Color="{StaticResource InternetColor}" />
+    <!-- End Point -->
+
+
+    <!-- Theme Color GSNexus App -->
+    <Color x:Key="DarkPurpleNexus">#2a2440</Color>
+    <SolidColorBrush x:Key="DarkPurpleNexusBrush" Color="{StaticResource DarkPurpleNexus}" />
+    <Color x:Key="PurpleNexus">#53346c</Color>
+    <SolidColorBrush x:Key="PurpleNexusBrush" Color="{StaticResource PurpleNexus}" />
+    <Color x:Key="DeepPurpleNexus">#3A2E5C</Color>
+    <SolidColorBrush x:Key="DeepPurpleNexusBrush" Color="{StaticResource DeepPurpleNexus}" />
+    <Color x:Key="SweetPurpleNexus">#68217a</Color>
+    <SolidColorBrush x:Key="SweetPurpleNexusBrush" Color="{StaticResource SweetPurpleNexus}" />
+    <Color x:Key="LightPurpleNexus">#8A79C7</Color>
+    <SolidColorBrush x:Key="LightPurpleNexusBrush" Color="{StaticResource LightPurpleNexus}" />
+    <Color x:Key="WhiteContainer">#F9F9F9</Color>
+    <SolidColorBrush x:Key="WhiteContainerBrush" Color="{StaticResource WhiteContainer}" />
+    <Color x:Key="GrayNexus">#F0F0F0</Color>
+    <SolidColorBrush x:Key="GrayNexusBrush" Color="{StaticResource GrayNexus}" />
+    <Color x:Key="HintNexus">#EBEBEB</Color>
+    <SolidColorBrush x:Key="HintNexusBrush" Color="{StaticResource HintNexus}" />
+    <Color x:Key="BlackNexus">#181818</Color>
+    <SolidColorBrush x:Key="BlackNexusBrush" Color="{StaticResource BlackNexus}" />
+    <Color x:Key="EnableNexus">#cccedb</Color>
+    <SolidColorBrush x:Key="EnableNexusBrush" Color="{StaticResource EnableNexus}" />
+
+
+    <!-- Grey Color Section -->
+    <Color x:Key="DeepDust">#3f4045</Color>
+    <SolidColorBrush x:Key="DeepDustBrush" Color="{StaticResource DeepDust}" />
+    <Color x:Key="DarkGray">#cbccd1</Color>
+    <SolidColorBrush x:Key="DarkGrayBrush" Color="{StaticResource DarkGray}" />
+    <Color x:Key="Dust">#737477</Color>
+    <SolidColorBrush x:Key="DustBrush" Color="{StaticResource Dust}" />
+    <Color x:Key="LightDust">#eeeef2</Color>
+    <SolidColorBrush x:Key="LightDustBrush" Color="{StaticResource LightDust}" />
+    <Color x:Key="ShadowDust">#5f5757</Color>
+    <SolidColorBrush x:Key="ShadowDustBrush" Color="{StaticResource Midnight}" />
+    <Color x:Key="ShadowDustTransparent">#524e51</Color>
+    <SolidColorBrush x:Key="ShadowDustTransparentBrush" Color="{StaticResource ShadowDustTransparent}" />
+
+    <!-- White Color Section -->
+    <Color x:Key="VeryLight">#ffffff</Color>
+    <SolidColorBrush x:Key="VeryLightBrush" Color="{StaticResource VeryLight}" />
+    <Color x:Key="Milk">#fdfefd</Color>
+    <SolidColorBrush x:Key="MilkBrush" Color="{StaticResource Milk}" />
+    <Color x:Key="DeepWhite">#e2e2e2</Color>
+    <SolidColorBrush x:Key="DeepWhiteBrush" Color="{StaticResource DeepWhite}" />
+    <Color x:Key="DarkWhite">#e3e4ea</Color>
+    <SolidColorBrush x:Key="DarkWhiteBrush" Color="{StaticResource DarkWhite}" />
+    <Color x:Key="SweetWhite">#eeeef2</Color>
+    <SolidColorBrush x:Key="SweetWhiteBrush" Color="{StaticResource SweetWhite}" />
+
+
+
+    <!-- Red Color Section-->
+    <Color x:Key="Bloody">#fc0202</Color>
+    <SolidColorBrush x:Key="BloodyBrush" Color="{StaticResource Bloody}" />
+    <Color x:Key="Brave">#e82727</Color>
+    <SolidColorBrush x:Key="BraveBrush" Color="{StaticResource Brave}" />
+    <Color x:Key="Pinky">#f2545b</Color>
+    <SolidColorBrush x:Key="PinkyBrush" Color="{StaticResource Pinky}" />
+
+
+
+    <!-- Black Color Section -->
+    <Color x:Key="Shadow">#232323</Color>
+    <SolidColorBrush x:Key="ShadowBrush" Color="{StaticResource Shadow}" />
+    <Color x:Key="DeepMidnight">#2c2c2c</Color>
+    <SolidColorBrush x:Key="DeepMidnightBrush" Color="{StaticResource DeepMidnight}" />
+    <Color x:Key="Midnight">#333333</Color>
+    <SolidColorBrush x:Key="MidnightBrush" Color="{StaticResource Midnight}" />
+
+    <!-- Blue Color Section -->
+    <Color x:Key="SkyBlue">#72ddf7</Color>
+    <SolidColorBrush x:Key="SkyBlueBrush" Color="{StaticResource SkyBlue}" />
+    <Color x:Key="MediumOceanBlue">#8093f1</Color>
+    <SolidColorBrush x:Key="MediumOceanBlueBrush" Color="{StaticResource MediumOceanBlue}" />
+    <Color x:Key="MidnightBlue">#0d2c54</Color>
+    <SolidColorBrush x:Key="MidnightBlueBrush" Color="{StaticResource MidnightBlue}" />
+
+    <!-- Green Color Section -->
+    <Color x:Key="DarkSeaGreen">#84bf99</Color>
+    <SolidColorBrush x:Key="DarkSeaGreenBrush" Color="{StaticResource DarkSeaGreen}" />
+    <Color x:Key="GoGreen">#0ead69</Color>
+    <SolidColorBrush x:Key="GoGreenBrush" Color="{StaticResource GoGreen}" />
+    <Color x:Key="EucalyptusGreen">#3bceac</Color>
+    <SolidColorBrush x:Key="EucalyptusBrush" Color="{StaticResource EucalyptusGreen}" />
+    <Color x:Key="MintGreen">#39bb84</Color>
+    <SolidColorBrush x:Key="MintGreenBrush" Color="{StaticResource MintGreen}" />
+
+
+
+
+
+</ResourceDictionary>

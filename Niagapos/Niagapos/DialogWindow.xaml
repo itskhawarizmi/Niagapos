@@ -1,0 +1,107 @@
+﻿<Window x:Class="Niagapos.DialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Niagapos"
+        xmlns:core="clr-namespace:Niagapos.Core;assembly=Niagapos.Core"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Icon="Images/Icons/codewizard-logo.ico" 
+        SizeToContent="WidthAndHeight"
+        Height="{Binding WindowMinimumHeight}" 
+        Width="{Binding WindowMinimumWidth}"
+        Title="{Binding Title}"
+        >
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="1"
+                      ResizeBorderThickness="{Binding ResizeBorderThickness}"/>
+
+    </WindowChrome.WindowChrome>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type local:DialogWindow}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Window}">
+                        <Border Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
+                            <!-- Main window outline -->
+                            <Grid>
+                                <!-- Opacity mask for corners on grid -->
+                                <Border x:Name="Container" Background="{StaticResource GrayNexusBrush}" />
+
+                                <!-- The window border and drop shadow -->
+                                <Border Background="{StaticResource HintNexusBrush}">
+                                    <Border.Effect>
+                                        <DropShadowEffect ShadowDepth="1" Opacity="0.2" />
+                                    </Border.Effect>
+                                </Border>
+
+                                <Grid>
+                                    <!-- The main window content -->
+                                    <Grid.OpacityMask>
+                                        <VisualBrush Visual="{Binding ElementName=Container}" />
+                                    </Grid.OpacityMask>
+
+                                    <Grid.RowDefinitions>
+                                        <!-- Title -->
+                                        <RowDefinition Height="{Binding TitleHeightGridLength, FallbackValue=35}" />
+                                        <!-- Content -->
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+
+                                    <!-- Title bar content -->
+                                    <Grid Background="{StaticResource DarkPurpleNexusBrush}" Panel.ZIndex="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button Style="{StaticResource WindowSystemIcon}"
+                                                Content="{StaticResource GamepadIcon}"
+                                                
+                                                />
+
+                                        <Viewbox Grid.Column="1" Margin="5">
+                                            <TextBlock Text="{Binding Title}"
+                                                       Foreground="{StaticResource MilkBrush}"
+                                                       FontFamily="{StaticResource Neuropol}"
+                                                       FontSize="{StaticResource FontSizeRegular}"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"
+                                                       />
+                                        </Viewbox>
+
+                                        <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                            <!-- Window control to minimize -->
+                                            <Button Command="{Binding WindowMinimizeCommand}" Style="{StaticResource WindowControl}" Content="{StaticResource WindowMinimizeIcon}" Visibility="Collapsed"  />
+                                            <!-- Window control to maximize -->
+                                            <Button Command="{Binding WindowMaximizeCommand}" Style="{StaticResource WindowControl}" Content="{StaticResource WindowMaximizeIcon}" Visibility="Collapsed" />
+                                            <!-- Window control to closing the current MainWindow -->
+                                            <Button Command="{Binding WindowCloseCommand}" Style="{StaticResource WindowCloseControl}" Content="{StaticResource WindowCloseIcon}" />
+                                        </StackPanel>
+
+                                    </Grid>
+
+                                    <Border Grid.Row="1" ClipToBounds="True" Padding="{Binding InnerContentPadding}">
+                                        <ContentPresenter Content="{TemplateBinding Content}" />
+                                    </Border>
+                                </Grid>
+
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Border Background="{StaticResource GrayNexusBrush}" Padding="15" Width="Auto">
+        <ContentControl Content="{Binding Content}" />
+    </Border>
+</Window>

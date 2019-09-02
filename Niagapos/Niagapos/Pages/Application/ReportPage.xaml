@@ -1,0 +1,168 @@
+﻿<local:BasePage x:TypeArguments="local:ReportViewModel"  x:Class="Niagapos.ReportPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Niagapos"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style TargetType="local:ReportPage">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="UserControl">
+                        <Border Background="{StaticResource GrayNexusBrush}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <!--  Main content-->
+                                <Border Background="{StaticResource GrayNexusBrush}" Margin="10 0 10 0" >
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <Grid Margin="0 0 0 0" Background="{StaticResource DeepWhiteBrush}">
+
+                                            <Border ClipToBounds="True" Panel.ZIndex="10">
+                                                <ContentPresenter Content="{TemplateBinding Content}" />
+                                            </Border>
+
+                                            <DataGrid Style="{StaticResource DataGridBase}"
+                                                        Panel.ZIndex="9"
+                                                        BorderBrush="{StaticResource VeryLightBrush}" 
+                                                        BorderThickness="0" 
+                                                        Margin="0" 
+                                                        Height="598" 
+                                                        AutoGenerateColumns="False"
+                                                        ItemsSource="{Binding DataReportItems, UpdateSourceTrigger=PropertyChanged}"
+                                                        SelectedItem="{Binding SelectedItems, Mode=TwoWay}"
+                                                        FontFamily="{StaticResource Roboto}"
+                                                        FontSize="{StaticResource FontSizeRegular}"
+                                                        VerticalScrollBarVisibility="Auto"
+                                                        HorizontalScrollBarVisibility="Auto"
+                                                        CanUserAddRows="False"
+                                                        CanUserSortColumns="True"
+                                                        CanUserReorderColumns="True"
+                                                        CanUserResizeRows="False"
+                                                        CanUserResizeColumns="False"
+                                                        SelectionMode="Single">
+                                                <DataGrid.InputBindings>
+                                                    <KeyBinding Command="{Binding RefreshDataCommand}" Key="F5" />
+                                                </DataGrid.InputBindings>
+
+                                                <DataGrid.Columns>
+                                                    <DataGridTextColumn Binding="{Binding Bill, Mode=TwoWay}" Header="NOTA" Width="AUTO" />
+                                                    <DataGridTextColumn Binding="{Binding DateAndTime, Mode=TwoWay}" Header="TANGGAL" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding ProductName, Mode=TwoWay}" Header="NAMA PRODUK" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding UnitPrice, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" Header="HARGA" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding Quantity, Mode=TwoWay}" Header="JUMLAH" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding Total, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" Header="TOTAL" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding Disc, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" Header="DISKON" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding Cash, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" Header="UANG PEMBAYARAN" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding User, Mode=TwoWay}" Header="PETUGAS" Width="AUTO"/>
+                                                    <DataGridTextColumn Binding="{Binding CustomerName, Mode=TwoWay}" Header="CUSTOMER" Width="AUTO"/>
+                                                </DataGrid.Columns>
+                                            </DataGrid>
+                                        </Grid>
+                                    </Grid>
+                                </Border>
+
+                                <!-- Search bar -->
+                                <Border Grid.Row="2"
+                                        Panel.ZIndex="0"
+                                        Background="{StaticResource DeepPurpleNexusBrush}" 
+                                        BorderBrush="{StaticResource MilkBrush}" 
+                                        BorderThickness="1 0 1 1" Margin="10 0 10 10"
+                                        Padding="5">
+
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <StackPanel Orientation="Horizontal">
+
+                                            <!-- Add data control -->
+                                            <Button Style="{StaticResource BaseButtonII}"
+                                                    Content="{StaticResource PrintIcon}"
+                                                    FontFamily="{StaticResource FontAwesome}"
+                                                    Foreground="{StaticResource MilkBrush}"
+                                                    Command="{Binding ExportDataCommand}"
+                                                    VerticalAlignment="Center"
+                                                    HorizontalAlignment="Left"
+                                                    Margin="10 0 0 0"
+                                                    FontSize="{StaticResource FontSizeLarge}"
+                                           
+                                             />
+
+                                         
+
+
+
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 5 0">
+
+                                            <Button Style="{StaticResource ButtonIcons}"
+                                                Content="{StaticResource BarcodeIcon}"
+                                                IsEnabled="False"
+                                                FontSize="18"
+                                                Padding="10 7 10 6"
+                                                BorderThickness="1 1 0 2"
+                                                Margin="30 0 0 0"
+                                                BorderBrush="{StaticResource DeepPurpleNexusBrush}"
+                                                Foreground="{StaticResource PurpleNexusBrush}"
+                                                Background="{StaticResource HintNexusBrush}"
+                                            />
+                                            <TextBox Style="{StaticResource TextBoxStyle}"
+                                                 Tag="Format pencarian: tahun-bulan-tanggal"
+                                                 Height="35"
+                                                 Width="400"
+                                                 Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                                 Padding="10 9 0 0"
+                                                 FontSize="{StaticResource FontSizeSmall}">
+
+                                                <TextBox.InputBindings>
+                                                    <KeyBinding Command="{Binding SearchDataCommand}" Key="Return" />
+                                                    <KeyBinding Command="{Binding ClearSearchHistoryCommand}" Key="Esc" />
+                                                    <KeyBinding Command="{Binding RefreshDataCommand}" Key="F5" />
+                                                </TextBox.InputBindings>
+
+                                            </TextBox>
+
+                                            <Button Style="{StaticResource BaseButton}"
+                                                Content="{StaticResource SearchIcon}"
+                                                FontFamily="{StaticResource FontAwesome}"
+                                                BorderBrush="{StaticResource DarkPurpleNexusBrush}"
+                                                Command="{Binding SearchDataCommand}"
+                                                BorderThickness="0"
+                                             />
+                                        </StackPanel>
+
+                                    </Grid>
+
+                                </Border>
+
+
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Border>
+        <Grid>
+         
+        </Grid>
+
+    </Border>
+
+</local:BasePage>

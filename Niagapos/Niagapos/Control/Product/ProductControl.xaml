@@ -1,0 +1,438 @@
+﻿<UserControl x:Class="Niagapos.ProductControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Niagapos"
+             xmlns:core="clr-namespace:Niagapos.Core;assembly=Niagapos.Core"
+             x:Name="mProductControl"
+             mc:Ignorable="d">
+
+    <Border Background="{StaticResource DeepWhiteBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- Title -->
+                <RowDefinition Height="30" />
+                <!-- Content -->
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Title bar content -->
+            <Grid Background="{StaticResource DarkGrayBrush}" Panel.ZIndex="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20 0 0 0" Orientation="Horizontal">
+                    <TextBlock Text="{StaticResource PlusSquareIcon}"
+                                           Foreground="{StaticResource VeryLightBrush}"
+                                           FontSize="{StaticResource FontSizeLarge}"
+                                           FontFamily="{StaticResource FontAwesome}">
+
+                    </TextBlock>
+
+                    <TextBlock Text="Tambah produk"
+                                           Margin="20 0 0 0"
+                                           VerticalAlignment="Center"
+                                           Foreground="{StaticResource VeryLightBrush}"
+                                           FontSize="{StaticResource FontSizeSmall}"
+                                           FontFamily="{StaticResource Neuropol}">
+
+                    </TextBlock>
+                </StackPanel>
+
+            </Grid>
+
+            <!-- Main content -->
+            <Border Grid.Row="1" Margin="20 10 20 10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Product name section -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Margin="0 10 10 10">
+                            <TextBlock Text="Rincian Produk"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="16"
+                                                   
+                                         />
+
+                            <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                        FontFamily="{StaticResource Expressway}"
+                                        FontSize="{StaticResource FontSizeSmallest}"
+                                        FontStyle="Italic">
+                                
+                                <Span>Berisikan Informasi nama</Span><LineBreak/>
+                                <Span>produk, kode produk dan</Span><LineBreak/>
+                                <Span>sebagainya..</Span>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="77 10 10 10">
+                            <TextBlock Text="Nama:"
+                                       Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="15"
+                                       Margin="0 0 0 10"
+                             />
+
+                            <TextBox Tag="Masukan nama produk..."
+                                     Style="{StaticResource TextBoxStyle}"
+                                     FontSize="{StaticResource FontSizeSmall}"
+                                     Width="350"
+                                     Text="{Binding SelectedListItemHelper.ProductName, 
+                                            UpdateSourceTrigger=PropertyChanged, 
+                                            NotifyOnSourceUpdated=True, 
+                                            NotifyOnValidationError=True}"  
+                                     BorderThickness="1"
+                                     Background="Transparent"
+                                    />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2" Margin="80 10 10 10">
+                            <TextBlock Text="ID Produk:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                         />
+
+                            <TextBox Tag="Kode unik sebuah produk..."
+                                     Style="{StaticResource TextBoxStyle}"
+                                     FontSize="{StaticResource FontSizeSmall}"
+                                     Width="350"
+                                     Text="{Binding SelectedListItemHelper.ProductId, 
+                                                    UpdateSourceTrigger=PropertyChanged, 
+                                                    NotifyOnSourceUpdated=True, 
+                                                    NotifyOnValidationError=True}"
+                                     BorderThickness="1"
+                                     Background="Transparent"
+                                    />
+                        </StackPanel>
+
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid Margin="197 10 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <TextBlock Text="Kategori:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                         />
+
+                                <ComboBox Style="{StaticResource BaseComboBox}"
+                                          Width="350"
+                                          SelectedValuePath="Index"
+                                          SelectedIndex="{Binding GetCategoryItems.Index}"
+                                          ItemsSource="{Binding CategoryItemsCollection, UpdateSourceTrigger=PropertyChanged}"
+                                          SelectedItem="{Binding GetCategoryItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                          DisplayMemberPath="Category">
+                                </ComboBox>
+
+
+                                
+                                
+                            </StackPanel>
+
+                            <StackPanel Margin="90 0 0 0" Grid.Column="1">
+                                <TextBlock Text="Supplier:"
+                                                 Foreground="{StaticResource PurpleNexusBrush}"
+                                                 FontFamily="{StaticResource Expressway}"
+                                                 FontSize="15"
+                                                 Margin="0 0 0 10"
+                                         />
+
+
+                                <ComboBox Style="{StaticResource BaseComboBox}"
+                                          Width="350"
+                                          SelectedValuePath="Index"
+                                          SelectedIndex="{Binding GetSupplierItems.Index}"
+                                          ItemsSource="{Binding SupplierItemsCollection, UpdateSourceTrigger=PropertyChanged}"
+                                          SelectedItem="{Binding GetSupplierItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                          DisplayMemberPath="CompanyName">
+                                </ComboBox>
+                            </StackPanel>
+
+                        </Grid>
+
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Grid Margin="197 10 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Visibility="Hidden">
+                                <TextBlock Text="Category:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                         />
+
+                                <TextBox Tag="Category product"
+                                         Style="{StaticResource TextBoxStyle}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         Width="350"
+                                         BorderThickness="1"
+                                         Background="Transparent"
+                                         
+                                />
+                            </StackPanel>
+
+
+                        </Grid>
+
+                    </Grid>
+
+                    <!-- Pricing and variant section -->
+                    <Grid Grid.Row="3" Margin="0 25 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Margin="0 10 53 10">
+                            <TextBlock Text="Harga dan Stok"
+                                       Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="16"
+                                                   
+                             />
+
+                            <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="{StaticResource FontSizeSmallest}"
+                                       FontStyle="Italic">
+                                   <Span>Berisikan informasi harga</Span><LineBreak/>
+                                   <Span>dan kuantiti dari produk</Span>
+                            </TextBlock>
+
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="32 10 20 10" HorizontalAlignment="Left">
+                            <TextBlock Text="Jumlah Stok:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                      
+                                         />
+
+                            <TextBox Tag="Kuantiti dari jumlah stok produk"
+                                     Style="{StaticResource TextBoxStyle}"
+                                     FontSize="{StaticResource FontSizeSmall}"
+                                     Width="350"
+                                     BorderThickness="1"
+                                     local:IsNotAllowedCharacters.Value="True"
+                                     Background="Transparent"
+                                     Text="{Binding SelectedListItemHelper.CurrentStock, 
+                                           UpdateSourceTrigger=PropertyChanged, 
+                                           NotifyOnSourceUpdated=True}"
+                             />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2" Margin="70 10 20 10">
+                            <TextBlock Text="Harga:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                      
+                                         />
+
+                            <TextBox Tag="Masukan harga produk"
+                                     Style="{StaticResource TextBoxStyle}"
+                                     FontSize="{StaticResource FontSizeSmall}"
+                                     Width="350"
+                                     BorderThickness="1"
+                                     local:IsNotAllowedCharacters.Value="True"
+                                     Background="Transparent"
+                                     Text="{Binding SelectedListItemHelper.Price, 
+                                           UpdateSourceTrigger=PropertyChanged, 
+                                           NotifyOnSourceUpdated=True, 
+                                           NotifyOnValidationError=True, StringFormat=C0, ConverterCulture=id-ID}"
+                             />
+                        </StackPanel>
+
+                    </Grid>
+
+
+                    <!-- Miscellaneous -->
+                    <Grid Grid.Row="5" Margin="0 25 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Margin="0 10 75 10">
+                            <TextBlock Text="Lain-lain"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="16"
+                                                   
+                                         />
+
+                            <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="{StaticResource FontSizeSmallest}"
+                                       FontStyle="Italic">
+                                   <Span>Rincian lain mengenai hal</Span><LineBreak/>
+                                   <Span>tentang produk</Span>
+                            </TextBlock>
+
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="10 10 170 0">
+                            <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="15"
+                                       Margin="0 0 0 10">
+                                
+                                <Span>Gambar <Italic FontSize="10">Ukuran yang direkomendasikan size 80 x 80 pixel</Italic></Span>
+
+                            </TextBlock>
+
+                            <Button Style="{StaticResource BaseButton}"
+                                    Content="Browse"
+                                    Command="{Binding DialogPictureCommand}"
+                                    FontFamily="{StaticResource FontAwesome}"
+                                    HorizontalAlignment="Left"
+                                   
+                             />
+
+                            <TextBlock Text="{Binding FilePathImg, UpdateSourceTrigger=PropertyChanged}"
+                                       Visibility="Visible"
+                                       Panel.ZIndex="20"
+                                       Width="200"
+                                       Foreground="{StaticResource DustBrush}"
+                                       HorizontalAlignment="Left"
+                                       FontSize="{StaticResource FontSizeSmall}"
+                                    
+                                   
+                             />
+                           
+
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="-270 21 0 -20" Panel.ZIndex="9">
+                            <Button Style="{StaticResource ButtonGrowIcon}"
+                                    Width="40" Height="50"
+                                    Content="{StaticResource TrashIcon}"
+                                    FontFamily="{StaticResource FontAwesome}"
+                                    Command="{Binding ClearImagePathCommand}"
+                                    FontSize="{StaticResource FontSizeRegular}"
+                                    Foreground="{StaticResource TechNinetyDeepBrush}" 
+                                 />
+                        </StackPanel>
+
+
+
+                    </Grid>
+
+
+                    <!-- Description of products -->
+                    <Grid Grid.Row="6">
+                        <Grid Margin="200 10 0 10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel>
+                                    <TextBlock Text="Deskripsi:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10">
+                                    <Span>Description: </Span> <Italic FontSize="10">Max 400 characters</Italic>
+
+                                    </TextBlock>
+
+
+                                    <TextBox Tag="Masukan deskripsi produk"
+                                         Style="{StaticResource TextBoxStyle}"
+                                         FontSize="{StaticResource FontSizeSmall}"
+                                         Width="450"
+                                         Height="100"
+                                         Text="{Binding SelectedListItemHelper.Description, 
+                                                        UpdateSourceTrigger=PropertyChanged, 
+                                                        NotifyOnSourceUpdated=True, 
+                                                        NotifyOnValidationError=True}"
+                                         BorderThickness="1"
+                                         Background="Transparent"
+                                         TextWrapping="Wrap"
+                                         MaxLength="400"
+                                         AcceptsReturn="True"
+                                                
+                               />
+                                </StackPanel>
+
+                                <!-- Add data & Cancel button -->
+                                <Border Grid.Column="1" VerticalAlignment="Center">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button Style="{StaticResource BaseButton}"
+                                                Content="Batal"
+                                                FontSize="{StaticResource FontSizeSmall}"
+                                                Width="130"
+                                                Margin="0 0 5 0"
+                                                Command="{Binding CloseAddControlMenuCommand}"
+                                         />
+                                        <Button Style="{StaticResource BaseButton}"
+                                                Content="Simpan"
+                                                Command="{Binding AddDataCommand}"
+                                                CommandParameter="{Binding ElementName=mProductControl}"
+                                                FontSize="{StaticResource FontSizeSmall}"
+                                                Width="130"
+                                         />
+                                    </StackPanel>
+                                </Border>
+
+                            </Grid>
+
+
+
+                        </Grid>
+
+                    </Grid>
+
+
+
+
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+
+</UserControl>
