@@ -62,6 +62,12 @@ Halaman ini merupakan halaman yang digunakan untuk melakukan proses transaksi pe
 Halaman ini merupakan halaman yang digunakan untuk mengelola data produk, supplier produk serta kategori produk seperti penambahan data produk baru, pembaruan data produk, dan juga serta penghapusan data produk.
 
 
+**7.Implementasi Bukti Struk Pembayaran**
+
+![struk](https://user-images.githubusercontent.com/54722742/64164458-7fa83d00-ce6d-11e9-84b9-4495786c3ee2.jpg)
+
+Ini merupakan laporan struk transaksi, sebagai tanda bukti pembelian suatu produk. Gunakan kertas dengan ukuran yang sesuai dengan ukuran yang telah saya cantumkan agar mendapatkan hasil yang maksimal.
+
 
 
 Dengan menggunakan sistem yang sudah terkomputerisasi dalam proses kegiatan bisnis para pelaku usaha (UMKM) bukan berarti untuk masa yang akan datang tidak akan menimbulkan masalah baru. Disini penulis coba memberikan saran untuk perkembangan progam aplikasi Point of Sales ini selanjutnya  antara lain:
