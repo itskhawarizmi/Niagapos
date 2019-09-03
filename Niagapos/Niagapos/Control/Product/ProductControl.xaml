@@ -324,7 +324,6 @@
                                      FontSize="{StaticResource FontSizeSmall}"
                                      Width="350"
                                      BorderThickness="1"
-                                     local:IsNotAllowedCharacters.Value="True"
                                      Background="Transparent"
                                      Text="{Binding SelectedListItemHelper.Size, 
                                            UpdateSourceTrigger=PropertyChanged, 
@@ -346,7 +345,6 @@
                                      FontSize="{StaticResource FontSizeSmall}"
                                      Width="350"
                                      BorderThickness="1"
-                                     local:IsNotAllowedCharacters.Value="True"
                                      Background="Transparent"
                                      Text="{Binding SelectedListItemHelper.Color, 
                                            UpdateSourceTrigger=PropertyChanged, 
@@ -474,7 +472,7 @@
                                 </StackPanel>
 
                                 <!-- Add data & Cancel button -->
-                                <Border Grid.Column="1" VerticalAlignment="Center">
+                                <Border Grid.Column="1" VerticalAlignment="Top">
                                     <StackPanel Orientation="Horizontal">
                                         <Button Style="{StaticResource BaseButton}"
                                                 Content="Batal"

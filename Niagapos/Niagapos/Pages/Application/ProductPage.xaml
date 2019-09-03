@@ -69,17 +69,7 @@
                                                             <DataGridTextColumn Binding="{Binding CurrentStock, Mode=TwoWay}" Header="STOK" Width="AUTO"/>
                                                             <DataGridTextColumn Binding="{Binding Price, Mode=TwoWay, StringFormat=C0, ConverterCulture=id-ID}" Header="HARGA" Width="AUTO"/>
 
-                                                            <DataGridTemplateColumn Header="DESKRIPSI" Width="200" IsReadOnly="True">
-                                                                <DataGridTemplateColumn.CellTemplate>
-                                                                    <DataTemplate>
-                                                                        <TextBlock Text="{Binding Description, Mode=TwoWay}"
-                                                                           TextWrapping="Wrap" 
-                                                                           TextAlignment="Justify"/>
-
-                                                                    </DataTemplate>
-                                                                </DataGridTemplateColumn.CellTemplate>
-                                                            </DataGridTemplateColumn>
-
+                                                          
 
                                                             <DataGridTemplateColumn Header="GAMBAR" Width="180" IsReadOnly="True">
                                                                 <DataGridTemplateColumn.CellTemplate>
@@ -93,6 +83,18 @@
                                                                     </DataTemplate>
                                                                 </DataGridTemplateColumn.CellTemplate>
                                                             </DataGridTemplateColumn>
+
+                                                            <DataGridTemplateColumn Header="DESKRIPSI" Width="200" IsReadOnly="True">
+                                                                <DataGridTemplateColumn.CellTemplate>
+                                                                    <DataTemplate>
+                                                                        <TextBlock Text="{Binding Description, Mode=TwoWay}"
+                                                                           TextWrapping="Wrap" 
+                                                                           TextAlignment="Justify"/>
+
+                                                                    </DataTemplate>
+                                                                </DataGridTemplateColumn.CellTemplate>
+                                                            </DataGridTemplateColumn>
+
                                                         </DataGrid.Columns>
                                                     </DataGrid>
                                                 </Grid>
@@ -784,7 +786,6 @@
                                      FontSize="{StaticResource FontSizeSmall}"
                                      Width="350"
                                      BorderThickness="1"
-                                     local:IsNotAllowedCharacters.Value="True"
                                      Background="Transparent"
                                      Text="{Binding SelectedListItemHelper.Size, 
                                            UpdateSourceTrigger=PropertyChanged, 
@@ -806,7 +807,6 @@
                                      FontSize="{StaticResource FontSizeSmall}"
                                      Width="350"
                                      BorderThickness="1"
-                                     local:IsNotAllowedCharacters.Value="True"
                                      Background="Transparent"
                                      Text="{Binding SelectedListItemHelper.Color, 
                                            UpdateSourceTrigger=PropertyChanged, 
@@ -1005,7 +1005,7 @@
                                             </StackPanel>
 
                                             <!-- Add data & Cancel button -->
-                                            <Border Grid.Column="1" VerticalAlignment="Center">
+                                            <Border Grid.Column="1" VerticalAlignment="Top">
                                                 <StackPanel Orientation="Horizontal">
                                                     <Button Style="{StaticResource BaseButton}"
                                                 Content="Batal"
