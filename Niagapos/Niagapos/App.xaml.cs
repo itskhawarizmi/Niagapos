@@ -52,6 +52,9 @@ namespace Niagapos
             // Bind a UI Manager
             DI.Kernel.Bind<IUIManager>().ToConstant(new UIManager());
 
+
+
+
             // Bind a file manager
             CoreDI.Kernel.Bind<IFileManager>().ToConstant(new FileManager());
 

@@ -4,11 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d9a3ed6c5b174506b1688b02164ef163" Name="Diagram1">
+      <Diagram DiagramId="6b97858f92bf4671a28242096eaf4d3f" Name="Diagram1">
         <EntityTypeShape EntityType="NiagaposModel.Customer" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="NiagaposModel.Product" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="NiagaposModel.ProductCategory" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="NiagaposModel.ProductSupplier" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="NiagaposModel.Product" Width="1.5" PointX="5.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NiagaposModel.ProductCategory" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NiagaposModel.ProductSupplier" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
         <EntityTypeShape EntityType="NiagaposModel.TransactionDetail" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="NiagaposModel.Transaction" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="NiagaposModel.UserAccess" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />

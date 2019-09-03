@@ -284,6 +284,80 @@
 
                     </Grid>
 
+                    <!-- Pricing and variant section -->
+                    <Grid Grid.Row="2" Margin="0 25 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Margin="0 10 53 10" Visibility="Hidden">
+                            <TextBlock Text="Harga dan Stok"
+                                       Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="16"
+                                                   
+                             />
+
+                            <TextBlock Foreground="{StaticResource PurpleNexusBrush}"
+                                       FontFamily="{StaticResource Expressway}"
+                                       FontSize="{StaticResource FontSizeSmallest}"
+                                       FontStyle="Italic">
+                                   <Span>Berisikan informasi harga</Span><LineBreak/>
+                                   <Span>dan kuantiti dari produk</Span>
+                            </TextBlock>
+
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="32 10 20 10" HorizontalAlignment="Left">
+                            <TextBlock Text="Ukuran:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                      
+                                         />
+
+                            <TextBox Tag="Masukan ukuran produk"
+                                     Style="{StaticResource TextBoxStyle}"
+                                     FontSize="{StaticResource FontSizeSmall}"
+                                     Width="350"
+                                     BorderThickness="1"
+                                     local:IsNotAllowedCharacters.Value="True"
+                                     Background="Transparent"
+                                     Text="{Binding SelectedListItemHelper.Size, 
+                                           UpdateSourceTrigger=PropertyChanged, 
+                                           NotifyOnSourceUpdated=True}"
+                             />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2" Margin="70 10 20 10">
+                            <TextBlock Text="Warna:"
+                                                   Foreground="{StaticResource PurpleNexusBrush}"
+                                                   FontFamily="{StaticResource Expressway}"
+                                                   FontSize="15"
+                                                   Margin="0 0 0 10"
+                                      
+                                         />
+
+                            <TextBox Tag="Masukan warna produk"
+                                     Style="{StaticResource TextBoxStyle}"
+                                     FontSize="{StaticResource FontSizeSmall}"
+                                     Width="350"
+                                     BorderThickness="1"
+                                     local:IsNotAllowedCharacters.Value="True"
+                                     Background="Transparent"
+                                     Text="{Binding SelectedListItemHelper.Color, 
+                                           UpdateSourceTrigger=PropertyChanged, 
+                                           NotifyOnSourceUpdated=True, 
+                                           NotifyOnValidationError=True, StringFormat=C0, ConverterCulture=id-ID}"
+                             />
+                        </StackPanel>
+
+                    </Grid>
+
+
 
                     <!-- Miscellaneous -->
                     <Grid Grid.Row="5" Margin="0 25 0 0">

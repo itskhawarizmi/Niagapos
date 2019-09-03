@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Niagapos.Core
+namespace Niagapos
 {
     using System;
     using System.Collections.Generic;
@@ -22,6 +22,8 @@ namespace Niagapos.Core
     
         public string ProductId { get; set; }
         public string ProductName { get; set; }
+        public string Size { get; set; }
+        public string Color { get; set; }
         public int CurrentStock { get; set; }
         public Nullable<decimal> Price { get; set; }
         public string ProductCategoryId { get; set; }

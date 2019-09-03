@@ -22,6 +22,8 @@
           </Key>
           <Property Name="ProductId" Type="nvarchar" MaxLength="12" Nullable="false" />
           <Property Name="ProductName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Size" Type="nvarchar" MaxLength="20" />
+          <Property Name="Color" Type="nvarchar" MaxLength="25" />
           <Property Name="CurrentStock" Type="int" Nullable="false" />
           <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
           <Property Name="ProductCategoryId" Type="nvarchar" MaxLength="6" Nullable="false" />
@@ -239,6 +241,8 @@
           </Key>
           <Property Name="ProductId" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Size" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Color" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
           <Property Name="CurrentStock" Type="Int32" Nullable="false" />
           <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="ProductCategoryId" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
@@ -469,6 +473,8 @@
               <MappingFragment StoreEntitySet="Product">
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
                 <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
                 <ScalarProperty Name="Price" ColumnName="Price" />
                 <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />

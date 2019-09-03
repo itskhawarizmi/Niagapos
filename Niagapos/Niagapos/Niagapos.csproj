@@ -105,6 +105,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -160,19 +162,19 @@
     <Compile Include="DI\DI.cs" />
     <Compile Include="DI\UI\IUIManager.cs" />
     <Compile Include="NiagaposModel.Context.cs">
-      <DependentUpon>NiagaposModel.Context.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>NiagaposModel.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="NiagaposModel.cs">
-      <DependentUpon>NiagaposModel.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>NiagaposModel.tt</DependentUpon>
     </Compile>
     <Compile Include="NiagaposModel.Designer.cs">
-      <DependentUpon>NiagaposModel.edmx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>NiagaposModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Application\ReportPage.xaml.cs">
       <DependentUpon>ReportPage.xaml</DependentUpon>
@@ -468,6 +470,9 @@
     <Resource Include="Images\Wallpaper\recore.jpg" />
     <Resource Include="Images\Wallpaper\senua_hellblade.jpg" />
     <Resource Include="Images\Wallpaper\sword_art_online.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="NiagaposModel.Context.tt">

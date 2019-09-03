@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Niagapos.Core
+namespace Niagapos
 {
     using System;
     using System.Collections.Generic;

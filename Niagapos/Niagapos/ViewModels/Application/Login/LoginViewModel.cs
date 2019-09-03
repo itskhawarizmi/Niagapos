@@ -12,6 +12,7 @@ using Niagapos.Core;
 using System.Data.Entity;
 using System.ComponentModel;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 
 namespace Niagapos
 {
@@ -136,6 +137,20 @@ namespace Niagapos
                                             access.Caption,
 
                                         };
+
+                            var list = new List<User>();
+
+                            var query2 = (from user in Context.Users
+                                          where user.Username == Username.Trim() &&
+                                                user.Password == UnsecurePassword.Trim()
+                                          orderby user.UserId
+                                          select user).ToList();
+
+
+                            foreach(var user in query2.ToList())
+                            {
+                                list.Add(new User { Username = user.Username, Password = user.Password });
+                            }
 
 
 

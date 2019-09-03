@@ -28,9 +28,9 @@ namespace Niagapos
             ConnectionString = @"data source=ALPHA-IDR1896;initial catalog=Niagapos;integrated security=True;";
           
 
-            Context = new NiagaposEntities();
-            InitializeObject();
-            CategorySetupComponent();
+           Context = new NiagaposEntities();
+           InitializeObject();
+           CategorySetupComponent();
             ProductItems = new ObservableCollection<Product>();
             ProductListItemHelper = new ObservableCollection<ProductDataModel>();
             SelectedListItemHelper = new ProductDataModel();
@@ -222,6 +222,8 @@ namespace Niagapos
                         CurrentStock = (int)SelectedListItemHelper.CurrentStock,
                         Price = (int)SelectedListItemHelper.Price,
                         ImgUrl = FilePathImg ?? @"D:/WPF Project/Niagapos/Niagapos/Images/Assets/NotAvailable.jpg",
+                        Size = SelectedListItemHelper.Size,
+                        Color = SelectedListItemHelper.Color,
                         ProductCategoryId = getCategoryId,
                         ProductSupplierId = getSupplierId,
                         Description = SelectedListItemHelper.Description,
@@ -449,6 +451,8 @@ namespace Niagapos
                             product.Price,
                             product.Description,
                             product.ImgUrl,
+                            product.Size,
+                            product.Color,
                             category.Category,
                             supplier.CompanyName,
                             supplier.Brand,
@@ -467,6 +471,8 @@ namespace Niagapos
                     Price = product.Price,
                     Description = product.Description,
                     ImgUrl = product.ImgUrl,
+                    Color = product.Color,
+                    Size = product.Size,
                     Category = product.Category,
                     Supplier = product.CompanyName,
                     Brand = product.Brand,
@@ -510,6 +516,8 @@ namespace Niagapos
                                  product.Price,
                                  product.Description,
                                  product.ImgUrl,
+                                 product.Size,
+                                 product.Color,
                                  category.Category,
                                  supplier.CompanyName,
                                  supplier.Brand,
@@ -527,6 +535,8 @@ namespace Niagapos
                         ProductName = product.ProductName,
                         CurrentStock = product.CurrentStock,
                         Price = product.Price,
+                        Size = product.Size,
+                        Color = product.Color,
                         Description = product.Description,
                         ImgUrl = product.ImgUrl,
                         Category = product.Category,
@@ -560,6 +570,8 @@ namespace Niagapos
                                     product.ProductName,
                                     product.CurrentStock,
                                     product.Price,
+                                    product.Size,
+                                    product.Color,
                                     product.Description,
                                     product.ImgUrl,
                                     product.ProductSupplierId,
@@ -581,10 +593,12 @@ namespace Niagapos
 
                                         Connection.Open();
                                         CommandQuery.Connection = Connection;
-                                        CommandQuery.CommandText = "UPDATE Product SET ProductName = @name, CurrentStock = @stock, Price = @price, Description = @description, ImgUrl = @img, ProductSupplierId = @supplierId, ProductCategoryId = @categoryId WHERE ProductId = @id";
+                                        CommandQuery.CommandText = "UPDATE Product SET ProductName = @name, CurrentStock = @stock, Price = @price, Size = @size, Color = @color, Description = @description, ImgUrl = @img, ProductSupplierId = @supplierId, ProductCategoryId = @categoryId WHERE ProductId = @id";
                                         CommandQuery.Parameters.AddWithValue("@id", SelectedListItemHelper.ProductId ?? (object)DBNull.Value);
                                         CommandQuery.Parameters.AddWithValue("@name", SelectedListItemHelper.ProductName ?? (object)DBNull.Value);
                                         CommandQuery.Parameters.AddWithValue("@stock", SelectedListItemHelper.CurrentStock);
+                                        CommandQuery.Parameters.AddWithValue("@size", SelectedListItemHelper.Size ?? (object)DBNull.Value);
+                                        CommandQuery.Parameters.AddWithValue("@color", SelectedListItemHelper.Color ?? (object)DBNull.Value);
                                         CommandQuery.Parameters.AddWithValue("@price", SelectedListItemHelper.Price ?? (object)DBNull.Value);
                                         CommandQuery.Parameters.AddWithValue("@description", SelectedListItemHelper.Description ?? (object)DBNull.Value);
                                         CommandQuery.Parameters.AddWithValue("@img", SelectedListItemHelper.ImgUrl ?? FilePathImg ?? (object)DBNull.Value);
@@ -698,14 +712,7 @@ namespace Niagapos
                     ProductCategoryItem.Add(categories);
                 }
             }
-            else
-            {
-                await DI.UI.ShowMessage(new MessageBoxDialogViewModel
-                {
-                    Title = "Message",
-                    Message = "Tidak ada data di dalam database!",
-                });
-            }
+          
 
             await Task.Delay(TimeSpan.FromSeconds(0.1));
         }
@@ -1016,14 +1023,7 @@ namespace Niagapos
                     ProductSupplierItems.Add(suppliers);
                 }
             }
-            else
-            {
-                await DI.UI.ShowMessage(new MessageBoxDialogViewModel
-                {
-                    Title = "Message",
-                    Message = "Tidak ada data di dalam database!",
-                });
-            }
+           
 
             await Task.Delay(TimeSpan.FromSeconds(0.1));
         }
@@ -1342,19 +1342,36 @@ ________________________________________________________________________________
                             BorderColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
                         };
 
-                        var cellStock = new PdfPCell(new Phrase("Stok.", fontHeader))
+
+                        var cellSize = new PdfPCell(new Phrase("Ukuran", fontHeader))
                         {
                             BackgroundColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
                             Border = 1,
                             BorderColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
                         };
 
-                        var cellPrice = new PdfPCell(new Phrase("Harga.", fontHeader))
+                        var cellColor = new PdfPCell(new Phrase("Warna", fontHeader))
                         {
                             BackgroundColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
                             Border = 1,
                             BorderColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
                         };
+
+                        var cellStock = new PdfPCell(new Phrase("Stok", fontHeader))
+                        {
+                            BackgroundColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
+                            Border = 1,
+                            BorderColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
+                        };
+
+                        var cellPrice = new PdfPCell(new Phrase("Harga", fontHeader))
+                        {
+                            BackgroundColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
+                            Border = 1,
+                            BorderColor = new BaseColor(System.Drawing.ColorTranslator.FromHtml("#498ccd")),
+                        };
+
+
 
 
                         table.AddCell(cellNo);
@@ -1445,9 +1462,9 @@ ________________________________________________________________________________
             public string ProductId { get; set; }
             public string ProductName { get; set; }
             public int CurrentStock { get; set; }
-
+            public string Size { get; set; }
+            public string Color { get; set; }
             public decimal? Price { get; set; }
-
             public string Category { get; set; }
 
             public string Supplier { get; set; }
