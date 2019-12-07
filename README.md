@@ -76,8 +76,4 @@ Dengan menggunakan sistem yang sudah terkomputerisasi dalam proses kegiatan bisn
 
 
 
-FYI:
-Dalam pembuatan aplikasi ini saya bagikan secara gratis bagi siapa saja yang ingin menggunakannya, dan saya berharap ada perkembangan lebih lanjut dan jangan sungkan untuk memberitahu saya akan hal itu. Saat ini saya sedang mengembangkan aplikasi berbasis cloud untuk penunjang bisnis. Jika Anda membutuhkan bantuan saya baik itu seputar hal **Kerjasama** ataupun **kontribusi** jangan sungkan untuk menghubungi saya. ^_^
-
-
 #Jangan menghapus lisensi dan nama saya dalam project tersebut, saya sangat mengapresiasi kebaikan Anda.
